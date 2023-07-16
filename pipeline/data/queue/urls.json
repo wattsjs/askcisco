@@ -1,0 +1,78 @@
+[
+  {
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/secure-firewall/guide-c07-737902.html",
+    "products": ["firewall", "firepower", "asa"],
+    "title": "Cisco Network Security Ordering Guide"
+  },
+
+  {
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/anyconnect-secure-mobility-client/secure-mobility-client-ds.html",
+    "products": ["anyconnect"],
+    "title": "Cisco Secure Client Data Sheet"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/nvmcollector/installation_and_configuration/guide/nvm-collector-5-0-admin-guide.html",
+    "products": ["anyconnect", "secure client", "nvm"],
+    "title": "Network Visibility Module Collector Installation and Configuration Guide, Release 5.x"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/anyconnect-secure-mobility-client/secure-client-og.html",
+    "products": ["anyconnect"],
+    "title": "Cisco Secure Client Ordering Guide"
+  },
+  {
+    "products": ["endpoint"],
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/fireamp-endpoints/datasheet-c78-733181.html",
+    "title": "Cisco Secure Endpoint Data Sheet"
+  },
+  {
+    "products": ["etd"],
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/cloud-email-security/secure-email-threat-defense-ds.html",
+    "title": "Cisco Email Threat Defense Data Sheet"
+  },
+  {
+    "products": ["ise"],
+    "source": "https://community.cisco.com/t5/security-knowledge-base/cisco-ise-with-microsoft-active-directory-azure-ad-and-intune/ta-p/4763635",
+    "title": "Cisco ISE with Microsoft Active Directory, Azure AD, and Intune"
+  },
+  {
+    "products": ["firewall", "firepower", "asa"],
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-3100-series-ds.html",
+    "title": "Cisco Secure Firewall 3100 Series Data Sheet"
+  },
+  {
+    "products": ["firewall", "firepower", "asa"],
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-4200-ds.html",
+    "title": "Cisco Secure Firewall 4200 Series Data Sheet"
+  },
+  {
+    "products": ["firewall", "firepower", "asa"],
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/firepower-1000-series/datasheet-c78-742469.html",
+    "title": "Cisco Firepower 1000 Series Data Sheet"
+  },
+  {
+    "products": ["firewall", "firepower", "asa"],
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/firepower-9000-series/datasheet-c78-742471.html",
+    "title": "Cisco Firepower 9300 Series Data Sheet"
+  },
+  {
+    "products": ["stealthwatch", "sna"],
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/stealthwatch/datasheet-c78-739398.html",
+    "title": "Cisco Secure Network Analytics Data Sheet"
+  },
+  {
+    "products": ["firewall", "firepower"],
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/fxos/multi-instance/multi-instance_solution.html",
+    "title": "Using Multi-Instance Capability on the Firepower 4100/9300"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/hardening/management_center/Cisco_Secure_Firewall_Management_Center_Hardening_Guide_v72.html",
+    "products": ["firewall", "firepower", "ftd"],
+    "title": "Cisco Secure Firewall Management Center Hardening Guide, Version 7.2"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/hardening/threat_defense/Threat_Defense_Hardening_Guide_v72.html",
+    "products": ["firewall", "firepower", "ftd"],
+    "title": "Cisco Secure Firewall Threat Defense Hardening Guide, Version 7.2"
+  }
+]

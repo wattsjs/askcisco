@@ -5,7 +5,10 @@ import sys
 import time
 from uuid import uuid4
 
-from langchain.document_loaders import PlaywrightURLLoader, PyPDFLoader
+from langchain.document_loaders import (
+    PlaywrightURLLoader,
+    OnlinePDFLoader,
+)
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.schema import Document
 from openai.error import APIError
@@ -46,9 +49,9 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] == "--force":
         force = True
 
-    ingest(qdrant_client, embed, "docs", force=force)
+    # ingest(qdrant_client, embed, "docs", force=force)
     ingest(qdrant_client, embed, "pdfs", force=force)
-    ingest(qdrant_client, embed, "urls", force=force)
+    # ingest(qdrant_client, embed, "urls", force=force)
 
 
 def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False):
@@ -72,7 +75,7 @@ def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False
                 logging.info(f"⤵️ skipping {data['source']} - already exists")
                 continue
         else:
-            client.delete(
+            delete_result = client.delete(
                 collection_name,
                 points_selector=FilterSelector(
                     filter=models.Filter(
@@ -88,6 +91,7 @@ def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False
                     )
                 ),
             )
+            logging.info(f"🗑 deleted {delete_result}")
             logging.info(f"‼️ force adding {data['source']}")
 
         if type == "urls":
@@ -278,8 +282,18 @@ def get_docs_from_queued_pdfs(pdfs: list[dict] | None = None) -> list[Document]:
 
     for pdf in pdfs:
         try:
-            loader = PyPDFLoader(pdf["source"])
-            pages = loader.load_and_split()
+            loader = OnlinePDFLoader(pdf["source"])
+            doc = loader.load()
+
+            # replace some boilerplate
+            if doc:
+                doc[0].page_content = (
+                    doc[0]
+                    .page_content.replace("Cisco Public", "")
+                    .replace("All Rights Reserved", "")
+                )
+
+            pages = text_splitter.split_documents(doc)
         except Exception as e:
             logging.error(f"failed to parse {pdf['source']}: {e}")
             continue

@@ -82,7 +82,7 @@ export async function POST({ request }) {
     vector: embedding.data[0].embedding,
     limit: 8,
     filter: docsFilter,
-    score_threshold: 0.8,
+    score_threshold: 0.7,
   }) as any as {
     payload: {
       page_content: string,
@@ -95,8 +95,9 @@ export async function POST({ request }) {
       }
     }
   }[]
-
-  console.log({ docs })
+  console.log(docs)
+  console.log(docs[0])
+  console.log(docs[0].payload.metadata)
 
   const system_messages = [
     "Use ONLY the following context to answer the question given.",

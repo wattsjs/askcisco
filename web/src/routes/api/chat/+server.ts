@@ -1,8 +1,29 @@
-import { OPENAI_API_KEY } from '$env/static/private';
+import { building } from "$app/environment";
+import {
+  KV_REST_API_TOKEN,
+  KV_REST_API_URL, OPENAI_API_KEY
+} from '$env/static/private';
 import type { DataFilter } from '$lib/types.js';
 import { qdrantClient } from '$lib/vectorstore.server.js';
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 import { OpenAIStream, StreamingTextResponse, type Message } from 'ai';
 import { Configuration, OpenAIApi, type ChatCompletionRequestMessage } from 'openai-edge';
+
+let redis: Redis;
+let ratelimit: Ratelimit;
+
+if (!building) {
+  redis = new Redis({
+    url: KV_REST_API_URL,
+    token: KV_REST_API_TOKEN,
+  });
+
+  ratelimit = new Ratelimit({
+    redis,
+    limiter: Ratelimit.slidingWindow(2, "10 s"),
+  });
+}
 
 // Create an OpenAI API client (that's edge friendly!)
 const oaiConfig = new Configuration({
@@ -15,7 +36,24 @@ export const config = {
   runtime: 'edge',
 }
 
-export async function POST({ request }) {
+export async function POST({ request, getClientAddress }) {
+
+  // check for rate limit
+  const ip = getClientAddress();
+  const rateLimitAttempt = await ratelimit.limit(ip);
+  if (!rateLimitAttempt.success) {
+    const timeRemaining = Math.floor(
+      (rateLimitAttempt.reset - new Date().getTime()) / 1000
+    );
+
+    return new Response(`Too many requests. Please try again in ${timeRemaining} seconds.`, {
+      status: 429,
+      headers: {
+        "Retry-After": timeRemaining.toString(),
+      },
+    });
+  }
+
   const { messages, filter } = await request.json() as { messages: Message[], filter: DataFilter }
 
   // join all user messages together

@@ -50,13 +50,6 @@
     if (versions.length && (!dataFilter.version || !versions.includes(dataFilter.version))) dataFilter.version = versions[0]
   }
 
-  // handle the scroll to botton button
-  let scrollButton: HTMLButtonElement
-  let showScrollButton = false
-  function handleOnScroll() {
-    // show the scroll to bottom button if window is not at the bottom
-    showScrollButton = window.innerHeight + window.scrollY < document.body.scrollHeight
-  }
   function handleScrollToBottom() {
     // scroll to the bottom of window
     window.scrollTo({
@@ -66,9 +59,7 @@
   }
 </script>
 
-<svelte:window on:scroll={handleOnScroll} />
-
-<div class="pb-4 pt-4 md:pt-10">
+<div class="pb-4 pt-4 md:pt-10 flex-1">
   <div class="relative mx-auto max-w-2xl px-4">
     {#if $messages.length}
       {#each $messages as message}
@@ -79,18 +70,7 @@
     {/if}
   </div>
 </div>
-<div class="fixed inset-x-0 bottom-0 bg-gradient-to-b from-muted/0 from-0% to-gray-100 to-50% dark:from-background/10 dark:from-10% dark:to-background/80">
-  <!-- {#if showScrollButton}
-    <button
-      bind:this={scrollButton}
-      on:click={handleScrollToBottom}
-      class="inline-flex items-center justify-center rounded-md text-sm font-medium shadow ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0 absolute right-4 top-1 z-10 bg-background transition-opacity duration-300 sm:right-8 md:top-2 opacity-100"
-      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="h-4 w-4"
-        ><path d="m205.66 149.66-72 72a8 8 0 0 1-11.32 0l-72-72a8 8 0 0 1 11.32-11.32L120 196.69V40a8 8 0 0 1 16 0v156.69l58.34-58.35a8 8 0 0 1 11.32 11.32Z" /></svg
-      ><span class="sr-only">Scroll to bottom</span></button
-    >
-  {/if} -->
-
+<div class="sticky inset-x-0 bottom-0 bg-gradient-to-b from-muted/0 from-0% to-gray-100 to-50% dark:from-background/10 dark:from-10% dark:to-background/80">
   <div class="mx-auto sm:max-w-2xl sm:px-4">
     <Sources {responseSources} />
     <div class="space-y-4 border-t bg-background px-4 py-2 shadow-lg sm:rounded-t-xl sm:border md:py-2">

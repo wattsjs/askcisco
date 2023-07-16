@@ -1,6 +1,18 @@
 [
   {
-    "source": "https://docs.umbrella.com/umbrella-user-guide/docs/getting-started",
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/wsa/wsa-15-0/user-guide/wsa-userguide-15-0.html",
+    "products": ["wsa"],
+    "slug": "wsa-user-guide",
+    "version": "15.0"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/wsa/wsa-14-5/user-guide/wsa-userguide-14-5.html",
+    "products": ["wsa"],
+    "slug": "wsa-user-guide",
+    "version": "14.5"
+  },
+  {
+    "source": "https://docs.umbrella.com/umbrella-user-guide/docs",
     "products": ["umbrella", "sig"],
     "slug": "umbrella"
   },

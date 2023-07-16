@@ -22,7 +22,14 @@ def main():
             force = True
         if not force:
             docs = [
-                d for d in docs if f'{d["slug"]}-{d["version"]}' not in existing_docs
+                d
+                for d in docs
+                if (
+                    ("version" not in d or d["version"] == "")
+                    and f'{d["slug"]}' not in existing_docs
+                )
+                or f'{d["slug"]}-{d.get("version")}' not in existing_docs
+                if "version" in d
             ]
 
         if not docs:

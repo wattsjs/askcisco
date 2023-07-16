@@ -2,34 +2,13 @@
   import EmptyState from '$lib/components/EmptyState.svelte'
   import Message from '$lib/components/Message.svelte'
   import Sources from '$lib/components/Sources.svelte'
+  import { products } from '$lib/products'
   import type { DataFilter, ResponseSource } from '$lib/types'
   import { useChat } from 'ai/svelte'
   import { onMount } from 'svelte'
 
   $: responseSources = [] as ResponseSource[]
 
-  const products = [
-    {
-      name: 'All Products',
-      versions: ['All Versions'],
-    },
-    {
-      name: 'Firepower',
-      versions: ['7.3', '7.2', '7.1', '6.7'],
-    },
-    {
-      name: 'ISE',
-      versions: ['3.2', '3.1', '3.0', '2.7'],
-    },
-    {
-      name: "Secure Client",
-      versions: ['5'],
-    },
-    {
-      name: "Umbrella",
-      versions: ['All Versions'],
-    }
-  ]
   let dataFilter = {
     version: products[0].versions[0],
     product: products[0].name,
@@ -125,7 +104,7 @@
           <div class="relative w-48">
             <select
               bind:value={dataFilter.product}
-              class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md"
             >
               {#each products as product}
                 <option>{product.name}</option>
@@ -136,7 +115,7 @@
           <div class="relative w-48 ml-4">
             <select
               bind:value={dataFilter.version}
-              class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md"
             >
               {#each versions as version}
                 <option>{version}</option>

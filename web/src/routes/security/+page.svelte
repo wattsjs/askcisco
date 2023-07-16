@@ -68,7 +68,7 @@
 
 <svelte:window on:scroll={handleOnScroll} />
 
-<div class="pb-[200px] pt-4 md:pt-10">
+<div class="pb-4 pt-4 md:pt-10">
   <div class="relative mx-auto max-w-2xl px-4">
     {#if $messages.length}
       {#each $messages as message}
@@ -80,7 +80,7 @@
   </div>
 </div>
 <div class="fixed inset-x-0 bottom-0 bg-gradient-to-b from-muted/0 from-0% to-gray-100 to-50% dark:from-background/10 dark:from-10% dark:to-background/80">
-  {#if showScrollButton}
+  <!-- {#if showScrollButton}
     <button
       bind:this={scrollButton}
       on:click={handleScrollToBottom}
@@ -89,7 +89,7 @@
         ><path d="m205.66 149.66-72 72a8 8 0 0 1-11.32 0l-72-72a8 8 0 0 1 11.32-11.32L120 196.69V40a8 8 0 0 1 16 0v156.69l58.34-58.35a8 8 0 0 1 11.32 11.32Z" /></svg
       ><span class="sr-only">Scroll to bottom</span></button
     >
-  {/if}
+  {/if} -->
 
   <div class="mx-auto sm:max-w-2xl sm:px-4">
     <Sources {responseSources} />

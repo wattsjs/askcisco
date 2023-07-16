@@ -26,5 +26,9 @@ export const products = [
   {
     name: "WSA",
     versions: ['15.0', '14.5'],
-}
+  },
+  {
+    name: "Duo",
+    versions: ['All Versions'],
+  }
 ]

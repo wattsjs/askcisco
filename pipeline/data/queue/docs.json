@@ -17,6 +17,11 @@
     "slug": "umbrella"
   },
   {
+    "source": "https://duo.com/docs",
+    "products": ["duo"],
+    "slug": "duo"
+  },
+  {
     "slug": "esa-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/esa/esa14-2/user_guide/b_ESA_Admin_Guide_14-2.html",
     "products": ["esa", "ces"],

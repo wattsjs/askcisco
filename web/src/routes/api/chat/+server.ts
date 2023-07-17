@@ -184,6 +184,7 @@ export async function POST({ request, getClientAddress }) {
     const response = await openai.createChatCompletion({
       model: 'gpt-3.5-turbo-16k',
       stream: true,
+      temperature: 0.2,
       messages: messages as ChatCompletionRequestMessage[]
     })
 

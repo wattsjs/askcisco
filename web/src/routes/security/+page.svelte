@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { browser } from '$app/environment'
   import { goto } from '$app/navigation'
   import { page } from '$app/stores'
   import EmptyState from '$lib/components/EmptyState.svelte'
@@ -10,13 +11,15 @@
   import { onMount } from 'svelte'
 
   export let data
-  $: ({ initialMessages } = data)
+  $: ({ initialMessages, initialProductFilter, initialVersionFilter } = data)
 
   $: responseSources = [] as ResponseSource[]
 
+  $: console.log(initialProductFilter, initialVersionFilter)
+
   let dataFilter = {
-    version: products[0].versions[0],
-    product: products[0].name,
+    version: initialVersionFilter,
+    product: initialProductFilter,
   } as DataFilter
 
   const { input, handleSubmit, messages, setMessages, reload } = useChat({
@@ -44,29 +47,41 @@
   $: {
     // set the query string to the first message
     if ($messages.length) {
-      goto(`?q=${$messages[0].content}`)
+      goto(`?q=${$messages[0].content}&product=${dataFilter.product}&version=${dataFilter.version}`)
     }
   }
 
   onMount(async () => {
     chatInput.focus()
 
+    dataFilter = {
+      version: initialVersionFilter,
+      product: initialProductFilter,
+    } as DataFilter
+
     // generate response if there are messages
     if (initialMessages.length) {
       setMessages(initialMessages)
       setTimeout(async () => {
-        await reload()
-      }, 100);
+        await reload({
+          options: {
+            body: {
+              filter: dataFilter,
+            },
+          },
+        })
+      }, 100)
     }
   })
 
   $: versions = [] as string[]
   $: {
-    const product = products.find((p) => p.name === dataFilter.product)
+    const product = products.find((p) => p.name.toLowerCase() === dataFilter.product?.toLowerCase())
     if (product) versions = product.versions
     else versions = []
 
     // reset the input when the product changes
+    console.log(versions, dataFilter.version)
     if (versions.length && (!dataFilter.version || !versions.includes(dataFilter.version))) dataFilter.version = versions[0]
   }
 

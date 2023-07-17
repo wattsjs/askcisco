@@ -3,8 +3,6 @@
 
   import type { Message } from 'ai'
   export let message: Message
-
-  $: console.log(message)
 </script>
 
 <div>

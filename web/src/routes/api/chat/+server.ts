@@ -1,7 +1,7 @@
 import { building } from "$app/environment";
 import {
   KV_REST_API_TOKEN,
-  KV_REST_API_URL, OPENAI_API_KEY
+  KV_REST_API_URL, OPENAI_API_KEY, UPSTASH_REDIS_REST_TOKEN, UPSTASH_REDIS_REST_URL
 } from '$env/static/private';
 import type { DataFilter } from '$lib/types.js';
 import { qdrantClient } from '$lib/vectorstore.server.js';
@@ -15,8 +15,8 @@ let ratelimit: Ratelimit;
 
 if (!building) {
   redis = new Redis({
-    url: KV_REST_API_URL,
-    token: KV_REST_API_TOKEN,
+    url: UPSTASH_REDIS_REST_URL,
+    token: UPSTASH_REDIS_REST_TOKEN,
   });
 
   ratelimit = new Ratelimit({

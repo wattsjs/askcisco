@@ -211,23 +211,18 @@ def get_documents_from_queued_docs(docs: list[dict] | None = None):
         for section in sections:
             meta = doc
 
-            if "header" in section and versions:
-                meta.update(
-                    {
-                        "title": f"{product} ({versions[0]})",
-                        "source": section["url"],
-                        "slug": doc["slug"],
-                        "subtitle": f'{section["title"]}'
-                        + (f' - {section["header"]}' if "header" in section else ""),
-                    }
-                )
-            else:
-                meta.update(
-                    {
-                        "title": section["title"],
-                        "source": section["url"],
-                    }
-                )
+            meta.update(
+                {
+                    "slug": doc["slug"],
+                    "title": section["title"],
+                    "subtitle": section["subtitle"]
+                    if "subtitle" in section
+                    else section["header"]
+                    if "header" in section
+                    else None,
+                    "source": section["url"],
+                }
+            )
 
             if versions:
                 meta["versions"] = versions

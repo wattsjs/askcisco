@@ -134,9 +134,8 @@ export async function POST({ request, getClientAddress }) {
 
   const docs = await qdrantClient.search('askcisco.com', {
     vector: embedding.data[0].embedding,
-    limit: 8,
+    limit: 10,
     filter: docsFilter,
-    score_threshold: 0.75,
   }) as any as {
     payload: {
       page_content: string,

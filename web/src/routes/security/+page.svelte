@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { goto } from '$app/navigation'
+  import { page } from '$app/stores'
   import EmptyState from '$lib/components/EmptyState.svelte'
   import Message from '$lib/components/Message.svelte'
   import Sources from '$lib/components/Sources.svelte'
@@ -7,6 +9,9 @@
   import { useChat } from 'ai/svelte'
   import { onMount } from 'svelte'
 
+  export let data
+  $: ({ initialMessages } = data)
+
   $: responseSources = [] as ResponseSource[]
 
   let dataFilter = {
@@ -14,7 +19,7 @@
     product: products[0].name,
   } as DataFilter
 
-  const { input, handleSubmit, messages, setMessages } = useChat({
+  const { input, handleSubmit, messages, setMessages, reload } = useChat({
     api: 'api/chat',
     body: {
       filter: dataFilter,
@@ -31,13 +36,28 @@
     },
     onFinish: () => {
       handleScrollToBottom()
+      chatInput.focus()
     },
   })
 
   let chatInput: HTMLInputElement
+  $: {
+    // set the query string to the first message
+    if ($messages.length) {
+      goto(`?q=${$messages[0].content}`)
+    }
+  }
 
-  onMount(() => {
+  onMount(async () => {
     chatInput.focus()
+
+    // generate response if there are messages
+    if (initialMessages.length) {
+      setMessages(initialMessages)
+      setTimeout(async () => {
+        await reload()
+      }, 100);
+    }
   })
 
   $: versions = [] as string[]
@@ -82,10 +102,7 @@
       >
         <div class="flex mb-1">
           <div class="relative w-48">
-            <select
-              bind:value={dataFilter.product}
-              class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md"
-            >
+            <select bind:value={dataFilter.product} class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md">
               {#each products as product}
                 <option>{product.name}</option>
               {/each}
@@ -93,10 +110,7 @@
           </div>
 
           <div class="relative w-48 ml-4">
-            <select
-              bind:value={dataFilter.version}
-              class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md"
-            >
+            <select bind:value={dataFilter.version} class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md">
               {#each versions as version}
                 <option>{version}</option>
               {/each}
@@ -110,8 +124,10 @@
             href="/"
             on:click={(e) => {
               e.preventDefault()
+              initialMessages = []
               setMessages([])
               input.set('')
+              goto('/security')
               responseSources = []
               chatInput.focus()
             }}

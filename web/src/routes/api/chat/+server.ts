@@ -163,7 +163,7 @@ export async function POST({ request, getClientAddress }) {
     "Never mention any personally identifiable information.",
     "Never mention any customer names.",
     "Never refer to yourself",
-    "ALWAYS Include with a list of links to the source field of the documents you used to answer the question. NEVER make up any links or include links that are not directly mentioned in the documents.",
+    "NEVER include any links to the source field of the documents you used to answer the question. NEVER make up any links or include links that are not directly mentioned in the documents.",
   ]
 
   console.log(`Found ${docs.length} documents`)
@@ -199,8 +199,6 @@ export async function POST({ request, getClientAddress }) {
     for (const message of messages) {
       combinedMessages.push(message)
     }
-
-    console.log(combinedMessages)
 
     // Create a chat completion using OpenAIApi
     const response = await openai.createChatCompletion({

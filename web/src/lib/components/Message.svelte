@@ -4,7 +4,7 @@
   import type { Message } from 'ai'
   export let message: Message
 
-  let messageBackground = message.role === 'user' ? '' : 'bg-gray-200 dark:bg-gray-700 dark:border-gray-800 rounded border border-gray-300'
+  $: console.log(message)
 </script>
 
 <div>

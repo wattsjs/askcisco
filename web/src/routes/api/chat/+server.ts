@@ -56,9 +56,11 @@ export async function POST({ request, getClientAddress }) {
 
   const { messages, filter } = await request.json() as { messages: Message[], filter: DataFilter }
 
+  console.log(filter)
+
   // join all user messages together
   const user_messages = messages.filter((message) => message.role === 'user').map((message) => message.content).join('? ')
-  console.log({ user_messages, messages })
+
   const queryEmbedding = await openai.createEmbedding({
     input: user_messages,
     model: 'text-embedding-ada-002',
@@ -84,7 +86,23 @@ export async function POST({ request, getClientAddress }) {
         match: {
           value: filter.version
         }
-      }]
+      },
+      {
+
+        "must": [
+          {
+            "is_empty": {
+              "key": "metadata.versions"
+            }
+          },
+          {
+            "is_empty": {
+              "key": "metadata.version"
+            }
+          }
+        ]
+      }
+      ]
     })
   }
   if (filter.product && filter.product !== "All Products") {
@@ -114,8 +132,6 @@ export async function POST({ request, getClientAddress }) {
     })
   }
 
-  console.log(JSON.stringify(docsFilter))
-
   const docs = await qdrantClient.search('askcisco.com', {
     vector: embedding.data[0].embedding,
     limit: 8,
@@ -133,9 +149,7 @@ export async function POST({ request, getClientAddress }) {
       }
     }
   }[]
-  console.log(docs)
-  console.log(docs[0])
-  console.log(docs[0].payload.metadata)
+
 
   const system_messages = [
     "Use ONLY the following context to answer the question given.",

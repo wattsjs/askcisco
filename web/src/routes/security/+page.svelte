@@ -1,7 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment'
   import { goto } from '$app/navigation'
-  import { page } from '$app/stores'
   import EmptyState from '$lib/components/EmptyState.svelte'
   import Message from '$lib/components/Message.svelte'
   import Sources from '$lib/components/Sources.svelte'
@@ -13,20 +12,16 @@
   export let data
   $: ({ initialMessages, initialProductFilter, initialVersionFilter } = data)
 
-  $: responseSources = [] as ResponseSource[]
+  let responseSources = [] as ResponseSource[]
 
-  $: console.log(initialProductFilter, initialVersionFilter)
-
-  let dataFilter = {
-    version: initialVersionFilter,
-    product: initialProductFilter,
-  } as DataFilter
+  let dataFilter = {} as DataFilter
 
   const { input, handleSubmit, messages, setMessages, reload, stop } = useChat({
     api: 'api/chat',
     body: {
       filter: dataFilter,
     },
+    initialMessages,
     onResponse: (response) => {
       if (response.status === 200) {
         // pull out the X-Response-Data header
@@ -35,7 +30,6 @@
           if (responseData) responseSources = JSON.parse(responseData)
         }
       }
-      handleScrollToBottom()
     },
     onFinish: () => {
       handleScrollToBottom()
@@ -46,7 +40,7 @@
   let chatInput: HTMLInputElement
   $: {
     // set the query string to the first message
-    if ($messages.length) {
+    if ($messages.length == 1 && browser) {
       goto(`?q=${$messages[0].content}&product=${dataFilter.product}&version=${dataFilter.version}`)
     }
   }
@@ -55,9 +49,9 @@
     chatInput.focus()
 
     dataFilter = {
-      version: initialVersionFilter,
       product: initialProductFilter,
-    } as DataFilter
+      version: initialVersionFilter,
+    }
 
     // generate response if there are messages
     if (initialMessages.length) {
@@ -70,7 +64,7 @@
             },
           },
         })
-      }, 100)
+      }, 200)
     }
   })
 
@@ -79,10 +73,10 @@
     const product = products.find((p) => p.name.toLowerCase() === dataFilter.product?.toLowerCase())
     if (product) versions = product.versions
     else versions = []
-
     // reset the input when the product changes
-    console.log(versions, dataFilter.version)
-    if (versions.length && (!dataFilter.version || !versions.includes(dataFilter.version))) dataFilter.version = versions[0]
+    if (versions.length && (!dataFilter.version || !versions.includes(dataFilter.version))) {
+      dataFilter.version = versions[0]
+    }
   }
 
   function handleScrollToBottom() {
@@ -91,6 +85,26 @@
       top: document.body.scrollHeight,
       behavior: 'smooth',
     })
+  }
+
+  function newChat(
+    params: { inputText: string; product: string | undefined; version: string | undefined } = {
+      inputText: '',
+      product: dataFilter.product,
+      version: dataFilter.version,
+    }
+  ) {
+    stop()
+    initialMessages = []
+    setMessages([])
+    input.set(params.inputText)
+    dataFilter = {
+      product: params.product ?? 'All Products',
+      version: params.version ?? 'All Versions',
+    }
+    goto('/security')
+    responseSources = []
+    chatInput.focus()
   }
 </script>
 
@@ -111,13 +125,19 @@
     <div class="space-y-4 border-t bg-background px-4 py-2 shadow-lg sm:rounded-t-xl sm:border md:py-2">
       <form
         on:submit={(e) => {
-          handleSubmit(e)
+          handleSubmit(e, {
+            options: {
+              body: {
+                filter: dataFilter,
+              },
+            }
+          })
           handleScrollToBottom()
         }}
       >
         <div class="flex mb-1">
           <div class="relative w-48">
-            <select bind:value={dataFilter.product} class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md">
+            <select bind:value={dataFilter.product} on:change={() => newChat()} class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md">
               {#each products as product}
                 <option>{product.name}</option>
               {/each}
@@ -125,7 +145,7 @@
           </div>
 
           <div class="relative w-48 ml-4">
-            <select bind:value={dataFilter.version} class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md">
+            <select bind:value={dataFilter.version} on:change={() => newChat()} class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md">
               {#each versions as version}
                 <option>{version}</option>
               {/each}
@@ -139,13 +159,7 @@
             href="/"
             on:click={(e) => {
               e.preventDefault()
-              stop()
-              initialMessages = []
-              setMessages([])
-              input.set('')
-              goto('/security')
-              responseSources = []
-              chatInput.focus()
+              newChat()
             }}
             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" class="h-4 w-4"
               ><path d="M224 128a8 8 0 0 1-8 8h-80v80a8 8 0 0 1-16 0v-80H40a8 8 0 0 1 0-16h80V40a8 8 0 0 1 16 0v80h80a8 8 0 0 1 8 8Z" /></svg

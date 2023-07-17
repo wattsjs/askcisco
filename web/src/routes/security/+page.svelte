@@ -22,7 +22,7 @@
     product: initialProductFilter,
   } as DataFilter
 
-  const { input, handleSubmit, messages, setMessages, reload } = useChat({
+  const { input, handleSubmit, messages, setMessages, reload, stop } = useChat({
     api: 'api/chat',
     body: {
       filter: dataFilter,
@@ -139,6 +139,7 @@
             href="/"
             on:click={(e) => {
               e.preventDefault()
+              stop()
               initialMessages = []
               setMessages([])
               input.set('')

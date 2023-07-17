@@ -36,6 +36,11 @@
     "title": "Cisco ISE with Microsoft Active Directory, Azure AD, and Intune"
   },
   {
+    "source": "https://www.cisco.com/c/en/us/products/collateral/security/identity-services-engine/ise-licensing-guide-og.html",
+    "products": ["ise"],
+    "title": "Cisco ISE Ordering Guide"
+  },
+  {
     "products": ["firewall", "firepower", "asa"],
     "source": "https://www.cisco.com/c/en/us/products/collateral/security/firewalls/secure-firewall-3100-series-ds.html",
     "title": "Cisco Secure Firewall 3100 Series Data Sheet"

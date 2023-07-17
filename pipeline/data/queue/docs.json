@@ -1,36 +1,63 @@
 [
   {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67.html",
+    "slug": "fmc-config-guide",
+    "products": [
+      "firepower",
+      "ftd",
+      "fmc",
+      "firewall"
+    ],
+    "version": "6.7",
+    "outdated": true
+  },
+  {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/wsa/wsa-15-0/user-guide/wsa-userguide-15-0.html",
-    "products": ["wsa"],
+    "products": [
+      "wsa"
+    ],
     "slug": "wsa-user-guide",
     "version": "15.0"
   },
   {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/wsa/wsa-14-5/user-guide/wsa-userguide-14-5.html",
-    "products": ["wsa"],
+    "products": [
+      "wsa"
+    ],
     "slug": "wsa-user-guide",
     "version": "14.5"
   },
   {
     "source": "https://docs.umbrella.com/umbrella-user-guide/docs",
-    "products": ["umbrella", "sig"],
+    "products": [
+      "umbrella",
+      "sig"
+    ],
     "slug": "umbrella"
   },
   {
     "source": "https://duo.com/docs",
-    "products": ["duo"],
+    "products": [
+      "duo"
+    ],
     "slug": "duo"
   },
   {
     "slug": "esa-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/esa/esa14-2/user_guide/b_ESA_Admin_Guide_14-2.html",
-    "products": ["esa", "ces"],
+    "products": [
+      "esa",
+      "ces"
+    ],
     "version": "14.2"
   },
   {
     "slug": "anyconnect-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/Cisco-Secure-Client-5/admin/guide/b-cisco-secure-client-admin-guide-5-0.html",
-    "products": ["anyconnect", "secure client"],
+    "products": [
+      "anyconnect",
+      "secure client"
+    ],
     "version": "5"
   },
   {
@@ -152,18 +179,8 @@
     ],
     "version": "7.0",
     "outdated": true
-  }, {
-    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67.html",
-    "slug": "fmc-config-guide",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
-    "version": "6.7",
-    "outdated": true
-  }, {
+  },
+  {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/integrations/dynamic-attributes-connector/220/cisco-secure-dynamic-attributes-connector-v220.html",
     "slug": "dynamic-attributes-connector",
     "products": [

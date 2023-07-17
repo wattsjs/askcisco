@@ -50,8 +50,8 @@ def main():
         force = True
 
     ingest(qdrant_client, embed, "docs", force=force)
-    ingest(qdrant_client, embed, "pdfs", force=force)
-    ingest(qdrant_client, embed, "urls", force=force)
+    # ingest(qdrant_client, embed, "pdfs", force=force)
+    # ingest(qdrant_client, embed, "urls", force=force)
 
 
 def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False):

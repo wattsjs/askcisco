@@ -17,7 +17,7 @@ def main():
     existing_docs = get_scraped_docs()
     if docs:
         # check if --force flag is passed in args
-        force = False
+        force = True
         if "--force" in sys.argv:
             force = True
         if not force:

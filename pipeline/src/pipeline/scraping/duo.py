@@ -39,6 +39,8 @@ class DuoSpider(scrapy.Spider):
         title = response.css("div.content h1::text").get()
         sections = response.css("div.content h2")
 
+        all_text = ""
+
         for section in sections:
             # get all text content even from nested tags
             header = section.css("*::text").get()
@@ -60,21 +62,23 @@ class DuoSpider(scrapy.Spider):
             title = title.replace("\xa0", " ")
             text = text.replace("\xa0", " ")
 
-            self.data.append(
-                {
-                    "title": title + " - " + header,
-                    "content": text,
-                    "url": response.url + f"#{id}",
-                }
-            )
+            all_text += text + "\n\n"
 
-            data.append(
-                {
-                    "title": title + " - " + header,
-                    "content": text,
-                    "url": response.url + f"#{id}",
-                }
-            )
+        self.data.append(
+            {
+                "title": title,
+                "content": all_text,
+                "url": response.url,
+            }
+        )
+
+        data.append(
+            {
+                "title": title,
+                "content": all_text,
+                "url": response.url,
+            }
+        )
 
         return data
 

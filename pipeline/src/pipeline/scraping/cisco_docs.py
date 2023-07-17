@@ -48,6 +48,9 @@ class CiscoDocsSpider(scrapy.Spider):
 
         # get all article.nested1 nodes
         articles = response.css("article.nested1")
+
+        text_data = ""
+
         for article in articles:
             if "id" not in article.attrib:
                 continue
@@ -59,9 +62,6 @@ class CiscoDocsSpider(scrapy.Spider):
             header = header.replace("\r", "").replace("\t", "").replace("\n", " ")
             header = " ".join(header.split())
 
-            if "Guidelines" in header:
-                print("Asdf")
-
             # get all text in article
             text = article.css("::text").getall()
             # merge all text into one string
@@ -70,21 +70,30 @@ class CiscoDocsSpider(scrapy.Spider):
             # strip consecutive spaces and newlines
             header = header.replace("\r", "").replace("\t", "").replace("\n", " ")
             header = " ".join(header.split())
+
             text = text.replace("\r", "").replace("\t", "").replace("\n", " ")
             text = " ".join(text.split())
 
-            d = {
-                "products": self.product,
-                "versions": self.version,
-                "title": title.strip(),
-                "id": article_id,
-                "header": header.strip(),
-                "content": text,
-                "url": response.url + f"#{article_id}",
-            }
+            text_data += "\n\n" + text
 
-            data.append(d)
+        main_title = response.css("h1#fw-pagetitle::text").get()
+        if main_title:
+            subtitle = title.strip()
+            title = main_title.strip()
+        else:
+            subtitle = None
 
-            self.data.append(d)
+        d = {
+            "products": self.product,
+            "versions": self.version,
+            "title": title.strip(),
+            "subtitle": subtitle,
+            "content": text_data,
+            "url": response.url,
+        }
+
+        data.append(d)
+
+        self.data.append(d)
 
         yield {"data": data}

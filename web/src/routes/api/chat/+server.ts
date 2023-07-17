@@ -136,7 +136,7 @@ export async function POST({ request, getClientAddress }) {
     vector: embedding.data[0].embedding,
     limit: 8,
     filter: docsFilter,
-    score_threshold: 0.7,
+    score_threshold: 0.75,
   }) as any as {
     payload: {
       page_content: string,
@@ -152,16 +152,18 @@ export async function POST({ request, getClientAddress }) {
 
 
   const system_messages = [
+    "You are a Cisco technical expert trained to answer questions about Cisco products to a technical audience.",
     "Use ONLY the following context to answer the question given.",
+    "Explain with technical steps how to solve the problem or question, and do not explain concepts or theory unless asked.",
+    "NEVER make up any information or talk about anything that is not directly mentioned in the documents below",
     "Answer any following questions only based on the documents.",
-    "NEVER use any other documents or context or knowledge to answer the question.",
-    "NEVER directly reference any of the documents, only derive information from them.",
-    "ALWAYS Use brevity in your responses.",
+    "ALWAYS Use brevity in your responses, respond with a maximum of a paragraph.",
     "Refer to any context as 'training data'.",
     "Always respond in markdown format. Use markdown tables and lists to present data, processes, and steps.",
     "Never mention any personally identifiable information.",
     "Never mention any customer names.",
-    "Never refer to yourself"
+    "Never refer to yourself",
+    "ALWAYS Include with a list of links to the source field of the documents you used to answer the question. NEVER make up any links or include links that are not directly mentioned in the documents.",
   ]
 
   console.log(`Found ${docs.length} documents`)
@@ -169,9 +171,9 @@ export async function POST({ request, getClientAddress }) {
   if (docs.length > 0) {
     for (const doc of docs) {
       if (doc.payload?.page_content && doc.payload?.metadata?.source) {
-        const context = `Document: ${doc.payload?.page_content}\nSource: ${doc.payload?.metadata?.source}\n`
+        let context = `Document: ${doc.payload?.page_content}\nSource: ${doc.payload?.metadata?.source}\n`
         if (doc.payload?.metadata?.title) {
-          system_messages.push(`Title: ${doc.payload?.metadata?.title}`)
+          context = `Title: ${doc.payload?.metadata?.title}\n${context}`
         }
         system_messages.push(context)
       }
@@ -187,19 +189,25 @@ export async function POST({ request, getClientAddress }) {
       ))
     )
 
+    const combinedMessages = []
+    for (const message of system_messages) {
+      combinedMessages.push({
+        content: message,
+        role: 'system',
+      })
+    }
+    for (const message of messages) {
+      combinedMessages.push(message)
+    }
 
-    // prepend the system messages to the messages array
-    messages.unshift({
-      content: system_messages.join('\n'),
-      role: 'system',
-    } as Message)
+    console.log(combinedMessages)
 
     // Create a chat completion using OpenAIApi
     const response = await openai.createChatCompletion({
       model: 'gpt-3.5-turbo-16k',
       stream: true,
-      temperature: 0.2,
-      messages: messages as ChatCompletionRequestMessage[]
+      temperature: 0.8,
+      messages: combinedMessages as ChatCompletionRequestMessage[]
     })
 
     // Transform the response into a readable stream

@@ -136,6 +136,10 @@
         }}
       >
         <div class="flex mb-1">
+          <!-- Centered Text saying "Filter Results" -->
+          <div class="flex-grow text-center text-xs text-muted-foreground self-center mr-2">
+            Filter Results:
+          </div>
           <div class="relative w-48">
             <select bind:value={dataFilter.product} on:change={() => newChat()} class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 border focus:outline-none sm:text-sm rounded-md">
               {#each products as product}

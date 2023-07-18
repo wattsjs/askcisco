@@ -1,5 +1,17 @@
 [
   {
+    "source": "https://www.cisco.com/c/dam/en/us/td/docs/security/stealthwatch/system_installation_configuration/7_4_1_System_Configuration_Guide_DV_1_7.pdf",
+    "products": ["sna", "stealthwatch"],
+    "title": "Cisco Secure Network Analytics - System Configuration Guide",
+    "versions": ["7.4.1"]
+  },
+  {
+    "source": "https://www.cisco.com/c/dam/en/us/td/docs/security/stealthwatch/system_installation_configuration/7_4_1_VE_Appliance_Installation_Guide_DV_2_3.pdf",
+    "products": ["sna", "stealthwatch"],
+    "title": "Cisco Secure Network Analytics - Virtual Edition Appliance Installation Guide",
+    "versions": ["7.4.1"]
+  },
+  {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKAPP-1624.pdf",
     "technology": [
       "Security",

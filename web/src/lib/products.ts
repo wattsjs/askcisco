@@ -30,5 +30,9 @@ export const products = [
   {
     name: "Duo",
     versions: ['All Versions'],
+  },
+  {
+    name: "SNA",
+    versions: ['7.4.1'],
   }
 ]

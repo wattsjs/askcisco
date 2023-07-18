@@ -49,9 +49,9 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] == "--force":
         force = True
 
+    ingest(qdrant_client, embed, "pdfs", force=force)
     ingest(qdrant_client, embed, "urls", force=force)
     ingest(qdrant_client, embed, "docs", force=force)
-    ingest(qdrant_client, embed, "pdfs", force=force)
 
 
 def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False):

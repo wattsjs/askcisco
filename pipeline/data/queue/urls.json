@@ -7,8 +7,13 @@
 
   {
     "source": "https://www.cisco.com/c/en/us/products/collateral/security/anyconnect-secure-mobility-client/secure-mobility-client-ds.html",
-    "products": ["anyconnect"],
+    "products": ["anyconnect", "secure client"],
     "title": "Cisco Secure Client Data Sheet"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/200191-AnyConnect-Licensing-Frequently-Asked-Qu.html",
+    "products": ["anyconnect", "secure client"],
+    "title": "Answer Cisco Secure Client Licensing Frequently Asked Questions"
   },
   {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/nvmcollector/installation_and_configuration/guide/nvm-collector-5-0-admin-guide.html",

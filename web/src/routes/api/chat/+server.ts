@@ -9,6 +9,13 @@ import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 import { OpenAIStream, StreamingTextResponse, type Message } from 'ai';
 import { Configuration, OpenAIApi, type ChatCompletionRequestMessage } from 'openai-edge';
+import crypto from 'crypto';
+
+function getHashOfString(inputString: string) {
+  const hash = crypto.createHash('sha256');
+  hash.update(inputString);
+  return hash.digest('hex');
+}
 
 let redis: Redis;
 let ratelimit: Ratelimit;
@@ -36,8 +43,7 @@ export const config = {
   runtime: 'edge',
 }
 
-export async function POST({ request, getClientAddress }) {
-
+export async function POST({ request, getClientAddress, url }) {
   // check for rate limit
   const ip = getClientAddress();
   const rateLimitAttempt = await ratelimit.limit(ip);
@@ -56,13 +62,21 @@ export async function POST({ request, getClientAddress }) {
 
   const { messages, filter } = await request.json() as { messages: Message[], filter: DataFilter }
 
-  console.log(filter)
-
   // join all user messages together
-  const user_messages = messages.filter((message) => message.role === 'user').map((message) => message.content).join('? ')
+  const user_messages = messages.filter((message) => message.role === 'user').map((message) => message.content)
+
+  // get the hash of the user messages
+  const user_messages_hash = getHashOfString(user_messages + JSON.stringify(filter))
+
+  // check if the hash is in the KV store
+  // const cachedResponse = await redis.get(user_messages_hash) as any
+  // if (cachedResponse) {
+  //   return new Response(cachedResponse)
+  // }
+
 
   const queryEmbedding = await openai.createEmbedding({
-    input: user_messages,
+    input: user_messages.join('... '),
     model: 'text-embedding-ada-002',
   })
   const embedding = await queryEmbedding.json()
@@ -203,12 +217,20 @@ export async function POST({ request, getClientAddress }) {
     const response = await openai.createChatCompletion({
       model: 'gpt-3.5-turbo-16k',
       stream: true,
-      temperature: 0.8,
+      temperature: 0,
       messages: combinedMessages as ChatCompletionRequestMessage[]
     })
 
     // Transform the response into a readable stream
-    const stream = OpenAIStream(response)
+    const stream = OpenAIStream(response, {
+      async onCompletion(completion) {
+        // only cache the response to the first message
+        if (user_messages.length === 1)
+          await redis.set(user_messages_hash, completion, {
+            ex: 60 * 60 * 24
+          })
+      },
+    })
 
     // Return a StreamingTextResponse, which can be consumed by the client
     return new StreamingTextResponse(stream, {
@@ -221,6 +243,7 @@ export async function POST({ request, getClientAddress }) {
     const response = await openai.createChatCompletion({
       model: 'gpt-3.5-turbo-16k',
       stream: true,
+      temperature: 0,
       messages: [{
         content: "Explain to the user that the training data does not contain any information about the question they asked.",
         role: 'system',
@@ -228,7 +251,8 @@ export async function POST({ request, getClientAddress }) {
     })
 
     // Transform the response into a readable stream
-    const stream = OpenAIStream(response)
+    const stream = OpenAIStream(response, {
+    })
 
     // Return a StreamingTextResponse, which can be consumed by the client
     return new StreamingTextResponse(stream, {

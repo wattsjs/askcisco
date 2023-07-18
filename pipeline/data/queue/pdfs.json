@@ -12,6 +12,11 @@
     "versions": ["7.4.1"]
   },
   {
+    "products": ["stealthwatch", "sca"],
+    "source": "https://www.cisco.com/c/dam/en/us/products/collateral/security/stealthwatch/secure-cloud-analytics-ds.pdf",
+    "title": "Cisco Secure Cloud Analytics Datasheet"
+  },
+  {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKAPP-1624.pdf",
     "technology": [
       "Security",

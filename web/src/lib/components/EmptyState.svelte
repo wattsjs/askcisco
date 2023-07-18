@@ -1,5 +1,5 @@
 <div class="p-4 md:p-8 border rounded-lg bg-background opacity-80 text-sm md:text-md">
-  <h1 class="mb-2 text-md md:text-lg font-semibold">Welcome to Ask Cisco</h1>
+  <h1 class="mb-2 text-md md:text-lg font-semibold">Welcome to Ask Jamie</h1>
   <p class="mb-2 leading-normal text-muted-foreground">
     This is an experimental open source AI chatbot that leverages Cisco's public documentation as context to OpenAI's GPT-3.5 API.
   </p>

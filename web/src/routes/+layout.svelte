@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-  <title>Ask Cisco - AI Powered Cisco Documentation and Knowledgebase</title>
+  <title>Ask Jamie - AI Powered Cisco Documentation and Knowledgebase</title>
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">

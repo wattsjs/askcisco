@@ -1,4 +1,4 @@
-# Ask Cisco AI Chatbot
+# Ask Jamie AI Chatbot
 A simple AI chat bot that can answer questions about Cisco products and services.
 
 ## How it works

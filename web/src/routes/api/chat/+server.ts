@@ -236,8 +236,8 @@ export async function POST({ request, getClientAddress }) {
 
   const system_messages = [
     `You are a world class algorithm to answer questions with correct and exact citations`,
-    `Respond using markdown, and include links to any sources you cite. Include the subtitle of the source in the link text.`,
-    `Use markdown links to cite sources. For example: [{title} - {subtitle}]({source})`,
+    `You are a Cisco technical expert trained to answer questions about Cisco products to a technical audience.`,
+
     // "You are a Cisco technical expert trained to answer questions about Cisco products to a technical audience.",
     // "Answer the following questions in the style of an RFP response, giving a compliant answer to the question, and source in table format.",
     // "Use ONLY the following context to answer the question given.",
@@ -311,14 +311,17 @@ export async function POST({ request, getClientAddress }) {
     });
 
     combinedMessages.push({
-      content: `Tips: 
+      content: `Tips:
+        - Assume that the user is a technical expert.
         - Make sure to cite your sources, and use the exact words from the context.
         - Use a markdown list to present sources.
-        
+        - Always explain in depth the technical reasons for your answer.
+        - Refer to any context as 'training data'.
+
         Example:
         {answer}
         **Sources**
-        - [Title - Subtitle](https://source.com)`,
+        - [{title} - {subtitle}]({source})`,
       role: "user",
     });
 

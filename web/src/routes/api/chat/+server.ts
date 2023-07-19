@@ -9,18 +9,11 @@ import { qdrantClient } from "$lib/vectorstore.server.js";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 import { OpenAIStream, StreamingTextResponse, type Message } from "ai";
-import crypto from "crypto";
 import {
   Configuration,
   OpenAIApi,
   type ChatCompletionRequestMessage,
 } from "openai-edge";
-
-function getHashOfString(inputString: string) {
-  const hash = crypto.createHash("sha256");
-  hash.update(inputString);
-  return hash.digest("hex");
-}
 
 let redis: Redis;
 let ratelimit: Ratelimit;
@@ -77,11 +70,6 @@ export async function POST({ request, getClientAddress }) {
   const user_messages = messages
     .filter((message) => message.role === "user")
     .map((message) => message.content);
-
-  // get the hash of the user messages
-  const user_messages_hash = getHashOfString(
-    user_messages + JSON.stringify(filter)
-  );
 
   // check if the hash is in the KV store
   // const cachedResponse = await redis.get(user_messages_hash) as any
@@ -336,15 +324,7 @@ export async function POST({ request, getClientAddress }) {
     });
 
     // Transform the response into a readable stream
-    const stream = OpenAIStream(response, {
-      async onCompletion(completion) {
-        // only cache the response to the first message
-        if (user_messages.length === 1)
-          await redis.set(user_messages_hash, completion, {
-            ex: 60 * 60 * 24,
-          });
-      },
-    });
+    const stream = OpenAIStream(response, {});
 
     // Return a StreamingTextResponse, which can be consumed by the client
     return new StreamingTextResponse(stream, {

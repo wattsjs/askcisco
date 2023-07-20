@@ -303,13 +303,21 @@ export async function POST({ request, getClientAddress }) {
         - Assume that the user is a technical expert.
         - Make sure to cite your sources, and use the exact words from the context.
         - Use a markdown list to present sources.
-        - Always explain in depth the technical reasons for your answer.
+        - Always explain in depth the technical details from the context.
         - Refer to any context as 'training data'.
 
         Example:
-        {answer}
+        ========
+        Question: Is X supported on Y?
+        Answer: Yes, X is supported by engaging the flux neutrons in Y. It is called the "Discombobulator" feature.  
         **Sources**
-        - [{title} - {subtitle}]({source})`,
+        - [{title} - {subtitle}]({source})
+        ========`,
+      role: "user",
+    });
+
+    combinedMessages.push({
+      content: `Answer:`,
       role: "user",
     });
 

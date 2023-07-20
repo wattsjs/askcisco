@@ -17,7 +17,11 @@ class CiscoDocsSpider(scrapy.Spider):
         self.data = []
 
     def closed(self, reason):
-        filename = f"data/queue/docs/{self.name}-{self.version[0]}.json"
+        filename = (
+            f"data/queue/docs/{self.name}-{self.version[0]}.json"
+            if self.version
+            else f"data/queue/docs/{self.name}.json"
+        )
         with open(filename, "w") as f:
             json.dump(self.data, f)
 

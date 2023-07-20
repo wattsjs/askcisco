@@ -1,63 +1,54 @@
 [
   {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/quick_start/fmcv/fpmc-virtual.html",
+    "slug": "fmcv-quick-start",
+    "products": ["firepower", "ftd", "fmc", "firewall", "ftdv"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/threat_grid/admin-guide/v2-17/b_threat-grid-admin-guide.html",
+    "slug": "threat-grid-admin-guide",
+    "products": ["threat grid", "secure malware analytics"],
+    "versions": ["2.17"]
+  },
+  {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67.html",
     "slug": "fmc-config-guide",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "6.7",
     "outdated": true
   },
   {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/wsa/wsa-15-0/user-guide/wsa-userguide-15-0.html",
-    "products": [
-      "wsa"
-    ],
+    "products": ["wsa"],
     "slug": "wsa-user-guide",
     "version": "15.0"
   },
   {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/wsa/wsa-14-5/user-guide/wsa-userguide-14-5.html",
-    "products": [
-      "wsa"
-    ],
+    "products": ["wsa"],
     "slug": "wsa-user-guide",
     "version": "14.5"
   },
   {
     "source": "https://docs.umbrella.com/umbrella-user-guide/docs",
-    "products": [
-      "umbrella",
-      "sig"
-    ],
+    "products": ["umbrella", "sig"],
     "slug": "umbrella"
   },
   {
     "source": "https://duo.com/docs",
-    "products": [
-      "duo"
-    ],
+    "products": ["duo"],
     "slug": "duo"
   },
   {
     "slug": "esa-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/esa/esa14-2/user_guide/b_ESA_Admin_Guide_14-2.html",
-    "products": [
-      "esa",
-      "ces"
-    ],
+    "products": ["esa", "ces"],
     "version": "14.2"
   },
   {
     "slug": "anyconnect-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/Cisco-Secure-Client-5/admin/guide/b-cisco-secure-client-admin-guide-5-0.html",
-    "products": [
-      "anyconnect",
-      "secure client"
-    ],
+    "products": ["anyconnect", "secure client"],
     "version": "5"
   },
   {
@@ -90,116 +81,66 @@
   {
     "slug": "fmc-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/admin/730/management-center-admin-73.html",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.3"
   },
   {
     "slug": "fmc-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/admin/720/management-center-admin-72.html",
     "version": "7.2",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "outdated": true
   },
   {
     "slug": "fmc-device-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/730/management-center-device-config-73.html",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.3"
   },
   {
     "slug": "fmc-device-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/720/management-center-device-config-72.html",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.2",
     "outdated": true
   },
   {
     "slug": "fmc-upgrade-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/upgrade/management-center/730/upgrade-management-center-73.html",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.3"
   },
   {
     "slug": "fmc-upgrade-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/upgrade/management-center/720/upgrade-management-center-72.html",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.2",
     "outdated": true
   },
   {
     "slug": "fmc-upgrade-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/upgrade/management-center/710/upgrade-fmc-710.html",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.1",
     "outdated": true
   },
   {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70.html",
     "slug": "fmc-config-guide",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.0",
     "outdated": true
   },
   {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/integrations/dynamic-attributes-connector/220/cisco-secure-dynamic-attributes-connector-v220.html",
     "slug": "dynamic-attributes-connector",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "2.2"
   },
   {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/snort/730/snort3-configuration-guide-v73.html",
     "slug": "snort3-config-guide",
-    "products": [
-      "firepower",
-      "ftd",
-      "fmc",
-      "firewall"
-    ],
+    "products": ["firepower", "ftd", "fmc", "firewall"],
     "version": "7.3"
   }
 ]

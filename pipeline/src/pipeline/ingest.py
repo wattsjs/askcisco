@@ -49,9 +49,9 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] == "--force":
         force = True
 
+    ingest(qdrant_client, embed, "docs", force=force)
     ingest(qdrant_client, embed, "pdfs", force=force)
     ingest(qdrant_client, embed, "urls", force=force)
-    ingest(qdrant_client, embed, "docs", force=force)
 
 
 def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False):
@@ -244,7 +244,7 @@ def get_documents_from_queued_urls(urls: list[dict] | None = None) -> list[Docum
     if not urls:
         return []
 
-    logging.info(f"processing {len(urls)} urls")
+    logging.info(f"processing {urls[0]['source']} ...")
 
     loader = PlaywrightURLLoader(
         urls=[u["source"] for u in urls], remove_selectors=["header", "footer"]

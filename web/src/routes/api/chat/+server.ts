@@ -302,9 +302,12 @@ export async function POST({ request, getClientAddress }) {
       content: `Tips:
         - Assume that the user is a technical expert.
         - Make sure to cite your sources, and use the exact words from the context.
+        - Include a excerpt from the context in your answer.
+        - Always include the subtitle in the source
         - Use a markdown list to present sources.
         - Always explain in depth the technical details from the context.
         - Refer to any context as 'training data'.
+        - When presented with information about multiple software versions, always use the latest version.
 
         Example:
         ========

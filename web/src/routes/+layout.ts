@@ -1,6 +1,5 @@
 import type { Message } from "ai";
 import type { LayoutLoad } from "./$types";
-import { browser } from "$app/environment";
 
 export const load: LayoutLoad = async (event) => {
   const query = event.url.searchParams.get("q")

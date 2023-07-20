@@ -12,25 +12,24 @@ logging.basicConfig(
 )
 
 
+def get_doc_name(doc: dict) -> str:
+    if "version" in doc:
+        return f"{doc['slug']}-{doc['version']}"
+    if "versions" in doc:
+        return f"{doc['slug']}-{doc['versions'][0]}"
+    return f"{doc['slug']}"
+
+
 def main():
     docs = get_queued_docs()
     existing_docs = get_scraped_docs()
     if docs:
         # check if --force flag is passed in args
-        force = True
+        force = False
         if "--force" in sys.argv:
             force = True
         if not force:
-            docs = [
-                d
-                for d in docs
-                if (
-                    ("version" not in d or d["version"] == "")
-                    and f'{d["slug"]}' not in existing_docs
-                )
-                or f'{d["slug"]}-{d.get("version")}' not in existing_docs
-                if "version" in d
-            ]
+            docs = [d for d in docs if get_doc_name(d) not in existing_docs]
 
         if not docs:
             logging.info("no new docs to process")
@@ -59,21 +58,35 @@ def get_scraped_docs():
     urls: list[str] = []
     # read all file names from data/queue/docs
     # add each file name to a list and return it
-    for file in os.listdir("data/queue/docs"):
-        if file.endswith(".json"):
-            urls.append(file.rstrip(".json"))
+    try:
+        for file in os.listdir("data/queue/docs"):
+            if file.endswith(".json"):
+                urls.append(file.replace(".json", ""))
+    except FileNotFoundError:
+        for file in os.listdir("pipeline/data/queue/docs"):
+            if file.endswith(".json"):
+                urls.append(file.replace(".json", ""))
     return urls
 
 
 def get_queued_docs():
     urls: list[dict] = []
-    with open("data/queue/docs.json", "r") as f:
-        d = f.read()
-        if not d:
-            logging.info("no new docs to process")
-            return
-        urls = json.loads(d)
-        urls = [u for u in urls if "source" in u and "slug" in u]
+    try:
+        with open("data/queue/docs.json", "r") as f:
+            d = f.read()
+            if not d:
+                logging.info("no new docs to process")
+                return
+            urls = json.loads(d)
+            urls = [u for u in urls if "source" in u and "slug" in u]
+    except FileNotFoundError:
+        with open("pipeline/data/queue/docs.json", "r") as f:
+            d = f.read()
+            if not d:
+                logging.info("no new docs to process")
+                return
+            urls = json.loads(d)
+            urls = [u for u in urls if "source" in u and "slug" in u]
 
     return urls
 

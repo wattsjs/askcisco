@@ -244,7 +244,7 @@ def get_documents_from_queued_urls(urls: list[dict] | None = None) -> list[Docum
     if not urls:
         return []
 
-    logging.info(f"processing {urls[0]['source']} ...")
+    logging.info(f"processing url {urls[0]['source']} ...")
 
     loader = PlaywrightURLLoader(
         urls=[u["source"] for u in urls], remove_selectors=["header", "footer"]
@@ -271,7 +271,7 @@ def get_docs_from_queued_pdfs(pdfs: list[dict] | None = None) -> list[Document]:
     if not pdfs:
         return []
 
-    logging.info(f"processing {len(pdfs)} pdfs")
+    logging.info(f"processing pdf {pdfs[0]['source']} ...")
 
     docs = []
 

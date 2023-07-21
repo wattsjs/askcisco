@@ -1,5 +1,41 @@
 [
   {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/user-guide/3_8/cisco-secure-workload-user-guide-on-prem-v38.html",
+    "slug": "secure-workload-user-guide",
+    "products": [
+      "secure workload",
+      "workload",
+      "tetration",
+      "csw",
+      "secure workload on-prem"
+    ],
+    "versions": ["3.8"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/user-guide/3_8/cisco-secure-workload-user-guide-saas-v38.html",
+    "slug": "secure-workload-saas-user-guide",
+    "products": [
+      "secure workload",
+      "workload",
+      "tetration",
+      "csw",
+      "secure workload saas"
+    ],
+    "versions": ["3.8"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/user-guide/3_7/cisco-secure-workload-user-guide-v37.html",
+    "slug": "secure-workload-user-guide",
+    "products": ["secure workload", "workload", "tetration", "csw"],
+    "versions": ["3.7"],
+    "outdated": true
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/workload_security/tetration-analytics/hw/m5_installation_guide/Cisco-Tetration-M5-Cluster-Hardware-Deployment-Guide.html",
+    "slug": "m5-cluster-hardware-deployment-guide",
+    "products": ["secure workload", "workload", "tetration", "csw"]
+  },
+  {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/quick_start/fmcv/fpmc-virtual.html",
     "slug": "fmcv-quick-start",
     "products": ["firepower", "ftd", "fmc", "firewall", "ftdv"]

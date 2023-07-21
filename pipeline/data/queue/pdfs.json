@@ -1,5 +1,10 @@
 [
   {
+    "source": "https://www.cisco.com/c/dam/en/us/td/docs/security/stealthwatch/management_console/securit_events_alarm_categories/7_4_Security_Events_and_Alarm_Categories_DV_2_0.pdf",
+    "products": ["sna", "stealthwatch"],
+    "title": "Cisco Secure Network Analytics - Security Events and Alarm Categories"
+  },
+  {
     "source": "https://www.cisco.com/c/dam/en/us/td/docs/security/stealthwatch/system_installation_configuration/7_4_1_System_Configuration_Guide_DV_1_7.pdf",
     "products": ["sna", "stealthwatch"],
     "title": "Cisco Secure Network Analytics - System Configuration Guide",
@@ -18,3194 +23,1544 @@
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKAPP-1624.pdf",
-    "technology": [
-      "Security",
-      "AppDynamics"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "AppDynamics"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "New innovations in Application Security - BRKAPP-1624",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/TACSEC-2006.pdf",
-    "technology": [
-      "Security"
-    ],
-    "session type": [
-      "Technical Solutions Clinic"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "session type": ["Technical Solutions Clinic"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Troubleshooting Cisco Secure Firewall Cluster failures and packet drops - TACSEC-2006",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/TACSEC-2005.pdf",
-    "technology": [
-      "Security"
-    ],
-    "session type": [
-      "Technical Solutions Clinic"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "session type": ["Technical Solutions Clinic"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Mastering ISE Posture: Ensuring Compliance and Tackling Common Challenges - TACSEC-2005",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/TACSEC-2004.pdf",
-    "technology": [
-      "Security"
-    ],
-    "session type": [
-      "Technical Solutions Clinic"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "session type": ["Technical Solutions Clinic"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Troubleshooting Cisco Secure Client with SAML Single Sign-On on Secure Firewall - TACSEC-2004",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/TACSEC-2003.pdf",
-    "technology": [
-      "Security"
-    ],
-    "session type": [
-      "Technical Solutions Clinic"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "session type": ["Technical Solutions Clinic"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Empower your Secure Network Analytics with ISE via pxGrid - TACSEC-2003",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/TACSEC-2002.pdf",
-    "technology": [
-      "Security"
-    ],
-    "session type": [
-      "Technical Solutions Clinic"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "session type": ["Technical Solutions Clinic"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Troubleshooting URL and Application filtering issues on Secure Firewall - TACSEC-2002",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/TACSEC-2001.pdf",
-    "technology": [
-      "Security",
-      "Customer Experience"
-    ],
-    "session type": [
-      "Technical Solutions Clinic"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Customer Experience"],
+    "session type": ["Technical Solutions Clinic"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Troubleshooting Secure Endpoint configuration and integration with Secure Web and Email. - TACSEC-2001",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/TACSEC-2000.pdf",
-    "technology": [
-      "Security",
-      "Customer Experience"
-    ],
-    "session type": [
-      "Technical Solutions Clinic"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Customer Experience"],
+    "session type": ["Technical Solutions Clinic"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Troubleshooting TETRA Definition Failures - TACSEC-2000",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOSEC-1106.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco Secure Firewall New Releases: Raising the bar for performance, connectivity, and security - PSOSEC-1106",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOSEC-1024.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco Hybrid Cloud Security: It's never been easier to protect hybrid and multicloud environments - PSOSEC-1024",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOSEC-1010.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "New Zero Trust Innovations power Cisco\u2019s next-gen SSE solution - PSOSEC-1010",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOSEC-1009.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cybercriminals See All Users As Opportunities - PSOSEC-1009",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOSEC-1008.pdf",
-    "technology": [
-      "Security",
-      "Hybrid Cloud"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Hybrid Cloud"],
+    "technical level": ["Introductory"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Leading the way to a more secure, multicloud world with Cisco - PSOSEC-1008",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOSEC-1007.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco XDR: Simplify Your Security Operations - PSOSEC-1007",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOIND-1015.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Delivering Security Resilience for Governments - PSOIND-1015",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOIND-1008.pdf",
-    "technology": [
-      "Internet of Things (IoT)",
-      "Security"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Internet of Things (IoT)", "Security"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Healthcare\u2019s digital tsunami - why the future of smart hospitals depends on IT - PSOIND-1008",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOIND-1007.pdf",
-    "technology": [
-      "Security",
-      "Enterprise Mobility"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Enterprise Mobility"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Five-point strategy to Bolster Cyber Resilience in Financial Services  - PSOIND-1007",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOIND-1006.pdf",
-    "technology": [
-      "Security",
-      "Optical"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Optical"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Communities Reimagined: Deliver a secure, agile and resilient foundation for your future - PSOIND-1006",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOGEN-1018.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["General"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure the Enterprise: If it's connected, it's protected - PSOGEN-1018",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/PSOCX-2000.pdf",
-    "technology": [
-      "Security",
-      "Customer Experience",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Product or Strategy Overview"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Customer Experience", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Product or Strategy Overview"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "How to Proactively Strengthen Your Security Resilience - PSOCX-2000",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-3330.pdf",
-    "technology": [
-      "Security",
-      "AppDynamics"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "AppDynamics"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Application Security for Kubernetes and Cloud Native Worlds - DEVNET-3330",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-3098.pdf",
-    "technology": [
-      "Security",
-      "Automation & Orchestration"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Automation & Orchestration"],
+    "technical level": ["Advanced"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Leveraging Cisco Security APIs for threat hunting based on automated alerting and intel-driven detections - DEVNET-3098",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-3012.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Advanced"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "DevSecOps (shift left) to secure Cloud Native Application - DEVNET-3012",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-2214.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Making the R count double in Cisco XDR: How to Automate your Security Operations (SecOps) within 10 Clicks (without Writing any Line of Code) - DEVNET-2214",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-2132.pdf",
-    "technology": [
-      "Security",
-      "DevNet"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "DevNet"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Working with pxGrid 2.0 APIs - DEVNET-2132",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-2124.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Finding and securing APIs in your Kubernetes cluster with APIClarity - DEVNET-2124",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-2121.pdf",
-    "technology": [
-      "Security",
-      "DevNet"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "DevNet"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure and manage your applications, users, policies and endpoints with Duo APIs  - DEVNET-2121",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-2109.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Scaling Hybrid Cloud Workflows with XDR Orchestration and Remote Connector - DEVNET-2109",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-2106.pdf",
-    "technology": [
-      "Security",
-      "DevNet"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "DevNet"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Simplifying your Life with Vanilla ISE - DEVNET-2106",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-2040.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Use Case Centric APIs: Under a New Umbrella  - DEVNET-2040",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-1456.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Introductory"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Automate and Simplify Your Ransomware Defense with Cisco\u2019s XDR - DEVNET-1456",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-1083.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Introductory"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Security Automation: Developing with Cisco XDR - DEVNET-1083",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-1075.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Introductory"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure your Serverless Cloud Infrastructure - DEVNET-1075",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVNET-1067.pdf",
-    "technology": [
-      "Security",
-      "DevNet"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "DevNet"],
+    "technical level": ["General"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Top 5 Shift left security tools for your open source projects - DEVNET-1067",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVLIT-1428.pdf",
-    "technology": [
-      "Security",
-      "Automation & Orchestration"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Automation & Orchestration"],
+    "technical level": ["Introductory"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Infrastructure as Code Tools to automated ISE deployment - DEVLIT-1428",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVLIT-1355.pdf",
-    "technology": [
-      "Security",
-      "Automation & Orchestration"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Automation & Orchestration"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Automating Cyber Hygiene Operations with Cisco XDR and Kenna Security - DEVLIT-1355",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVLIT-1220.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Using ISE OpenAPI to automate certificate management - DEVLIT-1220",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/DEVLIT-1054.pdf",
-    "technology": [
-      "Security",
-      "DevNet"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "DevNet"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "DevNet"],
+    "technical level": ["Introductory"],
+    "session type": ["DevNet"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Getting ready for Quantum Security and API interaction for Post Quantum Cryptography - DEVLIT-1054",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKXAR-2012.pdf",
-    "technology": [
-      "Security",
-      "Customer Experience"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Customer Experience"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": " Lessons Learned: Zero Trust Implementation in IOT Based Smart Buildings - BRKXAR-2012",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKXAR-2011.pdf",
-    "technology": [
-      "Internet of Things (IoT)",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Internet of Things (IoT)", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "How to develop a strategy to protect your Vision Zero infrastructure. - BRKXAR-2011",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKXAR-2008.pdf",
-    "technology": [
-      "Security",
-      "Full Stack Observability"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Full Stack Observability"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Zero Trust Segmentation - From Theory to Implementation - BRKXAR-2008",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKXAR-1002.pdf",
-    "technology": [
-      "Security",
-      "Hybrid Cloud"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Hybrid Cloud"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco Digital Supply Chain - Secure Software Delivery for customers  - BRKXAR-1002",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSPM-2027.pdf",
-    "technology": [
-      "Security",
-      "5G"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "5G"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Holistic Security in 5G deployments - BRKSPM-2027",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSPG-2868.pdf",
-    "technology": [
-      "Security",
-      "Service Provider"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Service Provider"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Building & Maintaining Trust in Service Provider Networks - BRKSPG-2868",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSPG-2401.pdf",
-    "technology": [
-      "Security",
-      "5G"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "5G"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco Secure Edge Protection - Protecting the 5G Edge against DDoS attacks - BRKSPG-2401",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-3320.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Demystifying TLS, QUIC and Encrypted Visibility Engine on Secure Firewall - BRKSEC-3320",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-3144.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco Secure SSLi:  Making Firewalls and other Security Devices more Effective - BRKSEC-3144",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-3129.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Public Key Cryptography - from RSA and EC to post-quantum - BRKSEC-3129",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-3058.pdf",
-    "technology": [
-      "Security",
-      "SDWAN (Viptela)"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SDWAN (Viptela)"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Route based VPNs with Cisco Secure Firewall - BRKSEC-3058",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-3023.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure your multi-cloud infrastructure using Cisco Secure Firewall Virtual - BRKSEC-3023",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-3022.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Connecting Datacenters and Branch Offices to the Cisco SASE Platform - BRKSEC-3022",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2931.pdf",
-    "technology": [
-      "Security",
-      "Analytics"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Analytics"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Building, Proving, and Extending Detections in Secure Analytics - BRKSEC-2931",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2913.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Why Cisco Secure Email if You Have Microsoft 365 - BRKSEC-2913",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2897.pdf",
-    "technology": [
-      "Internet of Things (IoT)",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Internet of Things (IoT)", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Understanding your ISE deployment with C.L.A.R.K. (Cisco Log Analysis & Remediation Kiosk) - BRKSEC-2897",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2845.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco Secure Firewall and SDA Integration Deep Dive - BRKSEC-2845",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2834.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco's Unified Agent: Cisco Secure Client. Bringing AMP, AnyConnect, Orbital & Umbrella together - BRKSEC-2834",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2828.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure Firewall in the DC and Enterprise - Deployment Tips and New Features - BRKSEC-2828",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2449.pdf",
-    "technology": [
-      "Security",
-      "Meraki"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Meraki"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "A Secure, Agile SD-Branch with Cisco Meraki\u00a0 - BRKSEC-2449",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2419.pdf",
-    "technology": [
-      "Routing",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Routing", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Branch Router Segmentation & Security - BRKSEC-2419",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2354.pdf",
-    "technology": [
-      "Security",
-      "Automation & Orchestration"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Automation & Orchestration"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Automating Security: Just Because You Can, Doesn't Mean You Should - BRKSEC-2354",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2347.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "ISE Deployment Staging and Planning - BRKSEC-2347",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2318.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Introduction to cloud-delivered Firewall Management Center - BRKSEC-2318",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2288.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "From Ship to Shore: Integrations, Collaboration, and (Securely) Taking Control Beyond the Cisco Secure Email Gateway - BRKSEC-2288",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2285.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "A First Look at Cisco's New SSE - BRKSEC-2285",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2242.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco's Malware Defense Cloud and Secure Malware Analytics Integrations - BRKSEC-2242",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2238.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Getting SASE with Umbrella and Meraki - Understand best practices for simple and flexible integrations between Meraki and Umbrella - BRKSEC-2238",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2236.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Keeping Up on Network Security with Cisco Secure Firewall - BRKSEC-2236",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2227.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Evaluating and Improving Defenses With MITRE ATT&CK - BRKSEC-2227",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2218.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco Secure Hybrid SWG - Your First Step to Your SASE Journey    - BRKSEC-2218",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2194.pdf",
-    "technology": [
-      "Security",
-      "Hybrid Cloud"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Hybrid Cloud"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Assess, Secure and Govern assets in the hybrid cloud with Cisco and JupiterOne - BRKSEC-2194",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2191.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Policy Driven Secure Hybrid Cloud Architecture - BRKSEC-2191",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2180.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "The Power of GraySkull! Adversarial Emulation  - BRKSEC-2180",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2178.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Extended Detection with Cisco XDR: Security analytics across the enterprise  - BRKSEC-2178",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2177.pdf",
-    "technology": [
-      "Security",
-      "Hybrid Cloud"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Hybrid Cloud"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Any cloud, anywhere! Zero trust for your\u00a0Workloads in hybrid multi-cloud environments\u200b - BRKSEC-2177",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2176.pdf",
-    "technology": [
-      "Security",
-      "Hybrid Work"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Hybrid Work"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Keeping Up with Zero Trust - BRKSEC-2176",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2174.pdf",
-    "technology": [
-      "Security",
-      "Hybrid Cloud"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Hybrid Cloud"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "A practical approach to securing applications and APIs  - BRKSEC-2174",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2148.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Zero Trust Firewall for Hybrid Networks - BRKSEC-2148",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2147.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Conti-Up your Cyber Security Game! - BRKSEC-2147",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2145.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Consistently Secure the Multicloud at Any Scale with Cisco - BRKSEC-2145",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2143.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Do You Know Where Your Data Is? A deep dive on Cisco Umbrella CASB and DLP and how to protect your locations, data and users - BRKSEC-2143",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2129.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Deploy & Scale SASE for Secure Remote Worker in the Cloud with Cisco+ Secure Connect  - BRKSEC-2129",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2128.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "SASE the SOCs New Best Friend - BRKSEC-2128",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2127.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Making Cisco Secure Firewall Threat Defense Policy Dynamic with Attribute Based Policy  - BRKSEC-2127",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2126.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Brace Yourself!  Take a Proactive Approach to Defend Your Application Workloads - BRKSEC-2126",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2123.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Solving the Segmentation Puzzle! Secure Workload and Secure Firewall Integration - BRKSEC-2123",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2122.pdf",
-    "technology": [
-      "Security",
-      "Automation & Orchestration"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Automation & Orchestration"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Leveraging Cisco's XDR solution with IT Service Management (ITSM) and SIEM Systems for Incident Investigation - BRKSEC-2122",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2121.pdf",
-    "technology": [
-      "Security",
-      "Programmability"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Programmability"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Help, My firewall has an issue. How to get a health alert. - BRKSEC-2121",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2120.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Breach Prevention: An Effective Security Awareness Program - BRKSEC-2120",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2113.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco XDR - Making sense of the Solution and how it's a Security Productivity Tool - BRKSEC-2113",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2105.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Deploying Cisco and Microsoft Zero Trust - BRKSEC-2105",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2104.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Zero Trust Identity for the Cloud - BRKSEC-2104",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2102.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Firepower Cluster NAT and PAT Operation and Troubleshooting - BRKSEC-2102",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2101.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Malware Execution As A Service: a Deep Dive into CSMA Advanced File Analysis - BRKSEC-2101",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2100.pdf",
-    "technology": [
-      "Security",
-      "Meraki"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Meraki"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "ISE Your Meraki Network with Group Based Adaptive Policy - BRKSEC-2100",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2099.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Using the Cisco Secure Firewall with the Encrypted Visibility Engine - BRKSEC-2099",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2097.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Integrate everything - Secure all your Kubernetes with Cisco Secure Workload - BRKSEC-2097",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2096.pdf",
-    "technology": [
-      "Internet of Things (IoT)",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Internet of Things (IoT)", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Securing Industrial Networks: Where do I start? - BRKSEC-2096",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2095.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco XDR with Email: Protect, Analyze and Evolve the SMTP Conversation - BRKSEC-2095",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2094.pdf",
-    "technology": [
-      "Security",
-      "DevNet"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "DevNet"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "A bird's-eye view of the Secure Firewall health - BRKSEC-2094",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2093.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Hardening the Secure Firewall - BRKSEC-2093",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2092.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Extending your segmentation strategy for your hybrid environment using Cisco SASE - BRKSEC-2092",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2091.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "ISE Design, Deploy & Best Practices  - BRKSEC-2091",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2090.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco XDR with Firewall - BRKSEC-2090",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2086.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Implement Direct Internet Access with Secure Firewall Threat Defense - BRKSEC-2086",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2085.pdf",
-    "technology": [
-      "Security",
-      "5G"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "5G"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": " Architecting Enterprise Security in a Wi-Fi plus Private 5G World - BRKSEC-2085",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2084.pdf",
-    "technology": [
-      "Security",
-      "Analytics"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Analytics"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Seeing is Believing: Unlocking XDR Outcomes with Visibility - BRKSEC-2084",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2079.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Zero Trust Network Access (ZTNA) Demystified - What It Is, Why You Need It and the Cisco Technologies That Make Frictionless Security Possible - BRKSEC-2079",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2075.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Integrating Open Source Zeek and Cisco XDR - BRKSEC-2075",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2072.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Troubleshoot and Isolate Performance Issues due to Secure Endpoints (Windows, Linux and MAC) - BRKSEC-2072",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2053.pdf",
-    "technology": [
-      "Security",
-      "SDWAN (Viptela)"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SDWAN (Viptela)"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Zero Trust: Securing the Evolving Workplace - BRKSEC-2053",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2051.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "The Evolution of DNS Security - BRKSEC-2051",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2044.pdf",
-    "technology": [
-      "Security",
-      "IPv6"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "IPv6"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure Operations for an IPv6 Network - BRKSEC-2044",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2039.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure Access with ISE in the Cloud - BRKSEC-2039",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2037.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Securing Starlink Internet Services - BRKSEC-2037",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1773.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "How to Build a Secure Multi-Cloud Environment with Cisco Secure Workload - BRKSEC-1773",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1639.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "An Introduction to Risk-Based Vulnerability Management - BRKSEC-1639",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1240.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "If you don't have a Security Reference Architecture, you must get one! - BRKSEC-1240",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1139.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Application Security in the Cloud Native World - BRKSEC-1139",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1138.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Security Management from Anywhere: Cisco Defense Orchestrator & cdFMC, and Security Analytics and Logging - BRKSEC-1138",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1028.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Security Visibility of Your Network using Cisco Secure Network Analytics and SAL - BRKSEC-1028",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1027.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Introduction to Cisco SAFE - BRKSEC-1027",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1026.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Strengthening the First Line of Defense using Cisco Secure Firewall and Cisco Umbrella - BRKSEC-1026",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1023.pdf",
-    "technology": [
-      "Security",
-      "SecureX"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SecureX"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Accelerate your SOC with Cisco XDR - BRKSEC-1023",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1017.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Achieving Industry Standards, Frameworks and Architectures Using Duo - BRKSEC-1017",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1015.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Is VPN really dead and replaced by Zero Trust Network Access (ZTNA)? - BRKSEC-1015",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKMER-2003.pdf",
-    "technology": [
-      "Security",
-      "Meraki"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Meraki"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Meraki with Secure Network Analytics and XDR: Threat Detection for the Rest of Us - BRKMER-2003",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKIOT-2882.pdf",
-    "technology": [
-      "Internet of Things (IoT)",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Internet of Things (IoT)", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Implementing Segmentation in Industrial Networks - BRKIOT-2882",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKIOT-2720.pdf",
-    "technology": [
-      "Internet of Things (IoT)",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Internet of Things (IoT)", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Connected Factory Architecture  - BRKIOT-2720",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKIOT-2102.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Multi-Cloud Industrial Networks: Driving Industry Digitization at Scale - BRKIOT-2102",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKGEN-2001.pdf",
-    "technology": [
-      "Security",
-      "5G"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "5G"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco P5G  - A Robust and Secure Architecture  - BRKGEN-2001",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKETI-2903.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "The Five Biggest Security Nightmares Waiting to Happen to Your Cloud Applications and How to Protect Your Business from Them (a.k.a. Why You Need a CNAPP ASAP!) - BRKETI-2903",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKETI-2511.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Securing Cloud Native Applications with Panoptica - BRKETI-2511",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKETI-2004.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Data Protection with Homomorphic Encryption and Multiparty Computing - BRKETI-2004",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKENT-3002.pdf",
-    "technology": [
-      "Security",
-      "IPv6"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "IPv6"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "IPv6 Security in the Local Area with First Hop Security - BRKENT-3002",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKENT-2002.pdf",
-    "technology": [
-      "Security",
-      "SASE"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SASE"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Deep Dive into SASE, SSE, and Zero Trust - BRKENT-2002",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKENS-3094.pdf",
-    "technology": [
-      "Enterprise Architecture",
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Enterprise Architecture", "Security"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Securing End-to-End from Campus and Branch to Cloud with Catalyst 9000 - BRKENS-3094",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKENS-2819.pdf",
-    "technology": [
-      "Enterprise Architecture",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Enterprise Architecture", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco SD-Access and Multi-Domain Segmentation - BRKENS-2819",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKENS-1851.pdf",
-    "technology": [
-      "Security",
-      "Cisco DNA Center"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Cisco DNA Center"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Zero Trust: Secure the Workplace with Cisco Software-Defined Access   - BRKENS-1851",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKDCN-3982.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "ACI L4-L7 Policy-Based Redirect (PBR) Deep Dive and Tips - BRKDCN-3982",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKDCN-3930.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Defense in Depth Security for MultiCloud Data Centers - BRKDCN-3930",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKDCN-2938.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Secure Firewall in ACI - BRKDCN-2938",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKDCN-2658.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Application Centric Design: How to get there with Cisco ACI - BRKDCN-2658",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCRT-3001.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "FirePower Threat Defense Automation using API's - BRKCRT-3001",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCRT-2002.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Mastering the Snort 3 upgrade and configuration in the Cisco Secure Firewall while preparing for the SNCF 300-710 exam. - BRKCRT-2002",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCOL-3301.pdf",
-    "technology": [
-      "Collaboration",
-      "Security"
-    ],
-    "technical level": [
-      "Advanced"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Collaboration", "Security"],
+    "technical level": ["Advanced"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Expressway Security and Hardening Recommendations for Hybrid Work Scenarios - BRKCOL-3301",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCOL-2876.pdf",
-    "technology": [
-      "Security",
-      "Webex"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Webex"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Securing Webex Meetings and Avoiding Meeting Fraud - Privacy, Confidentiality and Security Options for Meetings in a Virtual World - BRKCOL-2876",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCOL-2057.pdf",
-    "technology": [
-      "Security",
-      "Webex"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Webex"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Understanding Network Security Requirements for Webex Traffic - BRKCOL-2057",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCOC-2620.pdf",
-    "technology": [
-      "Security",
-      "Hybrid Work"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Hybrid Work"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cisco IT Security: The Evolution of Zero Trust and Passwordless - BRKCOC-2620",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCLD-2741.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "How to Simplify Cloud Native Security in a Hybrid Cloud Environment - BRKCLD-2741",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCLD-2367.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "The Power of Customization: High Relevance Alerting using Cisco Security in GCP - BRKCLD-2367",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKCLD-2018.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Enhancing Cloud Security: Safeguarding Your AWS Infrastructure with Cisco's Secure Firewall - BRKCLD-2018",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKAPP-2005.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Business Risk Observability for traditional and modern applications - BRKAPP-2005",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKAPP-2004.pdf",
-    "technology": [
-      "Security",
-      "AppDynamics"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "AppDynamics"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Using Full Stack Observability to align application security and lifecycle management - BRKAPP-2004",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKAPP-1116.pdf",
-    "technology": [
-      "Security",
-      "Analytics",
-      "Full Stack Observability"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Analytics", "Full Stack Observability"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "CNAPP and FSO together - Synergies of Cisco Observability and Cloud-Native Application Security - BRKAPP-1116",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKAPP-1115.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Cloud-Native Application Security: An Integrative CNAPP Approach from Cisco - BRKAPP-1115",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
@@ -3218,170 +1573,80 @@
       "Webex",
       "Hybrid Work"
     ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Innovation Talk"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technical level": ["General"],
+    "session type": ["Innovation Talk"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "The Next Stage of Hybrid Work: Delivering Unrivaled Experiences - INTCOL-1014",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2130.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts",
-      "On-Demand Session"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts", "On-Demand Session"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Designing and implementing virtual secure firewalls on prem or in  public cloud. - BRKSEC-2130",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2109.pdf",
-    "technology": [
-      "Cloud",
-      "Security"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts",
-      "On-Demand Session"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Cloud", "Security"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts", "On-Demand Session"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Traffic Inspection in Azure Cloud Environment using Cisco Secure Firewall and Gateway Load Balancer - BRKSEC-2109",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-2089.pdf",
-    "technology": [
-      "Security",
-      "Customer Experience"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts",
-      "On-Demand Session"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Customer Experience"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts", "On-Demand Session"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Migrations to Secure Firewall Threat Defense made easy with the latest Firewall Migration Tool (FMT) - BRKSEC-2089",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1033.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Breakouts",
-      "On-Demand Session"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["General"],
+    "session type": ["Breakouts", "On-Demand Session"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "The Hitchhiker's Guide to Zero Trust - BRKSEC-1033",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKSEC-1029.pdf",
-    "technology": [
-      "Security"
-    ],
-    "technical level": [
-      "Introductory"
-    ],
-    "session type": [
-      "Breakouts",
-      "On-Demand Session"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security"],
+    "technical level": ["Introductory"],
+    "session type": ["Breakouts", "On-Demand Session"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "You've Got Mail! What should your email security solution look like? - BRKSEC-1029",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/BRKDCN-2007.pdf",
-    "technology": [
-      "Security",
-      "Data Center"
-    ],
-    "technical level": [
-      "Intermediate"
-    ],
-    "session type": [
-      "Breakouts",
-      "On-Demand Session"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "Data Center"],
+    "technical level": ["Intermediate"],
+    "session type": ["Breakouts", "On-Demand Session"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "The deployment and principle of MACsec on NXOS - BRKDCN-2007",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
   {
     "source": "https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2023/pdf/INTSEC-1100.pdf",
-    "technology": [
-      "Security",
-      "SDWAN (Viptela)",
-      "SASE"
-    ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Innovation Talk"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technology": ["Security", "SDWAN (Viptela)", "SASE"],
+    "technical level": ["General"],
+    "session type": ["Innovation Talk"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Driving Connected and Protected Experiences with SASE - INTSEC-1100",
     "subtitle": "Cisco Live 2023 Las Vegas"
   },
@@ -3393,18 +1658,10 @@
       "Customer Experience",
       "Full Stack Observability"
     ],
-    "technical level": [
-      "General"
-    ],
-    "session type": [
-      "Innovation Talk"
-    ],
-    "language": [
-      "English"
-    ],
-    "event": [
-      "2023 Las Vegas"
-    ],
+    "technical level": ["General"],
+    "session type": ["Innovation Talk"],
+    "language": ["English"],
+    "event": ["2023 Las Vegas"],
     "title": "Security Experiences, Simplified - INTSEC-1000",
     "subtitle": "Cisco Live 2023 Las Vegas"
   }

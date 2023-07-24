@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SvelteMarkdown from "svelte-markdown";
+  import Markdown from "@magidoc/plugin-svelte-marked";
 
   import type { Message } from "ai";
   export let message: Message;
@@ -29,7 +29,7 @@
       <div
         class="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 text-sm max-w-none"
       >
-        <SvelteMarkdown source={message.content} />
+        <Markdown source={message.content} />
       </div>
     </div>
 

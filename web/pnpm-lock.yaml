@@ -31,6 +31,9 @@ dependencies:
     version: 0.2.3(svelte@4.1.1)
 
 devDependencies:
+  '@magidoc/plugin-svelte-marked':
+    specifier: ^4.0.0
+    version: 4.0.0
   '@melt-ui/pp':
     specifier: ^0.0.4
     version: 0.0.4(@melt-ui/svelte@0.22.2)(svelte@4.1.1)
@@ -43,6 +46,9 @@ devDependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.9
     version: 0.5.9(tailwindcss@3.3.3)
+  '@types/marked':
+    specifier: ^5.0.1
+    version: 5.0.1
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.45.0)(typescript@5.1.6)
@@ -61,6 +67,9 @@ devDependencies:
   eslint-plugin-svelte:
     specifier: ^2.32.4
     version: 2.32.4(eslint@8.45.0)(svelte@4.1.1)
+  marked:
+    specifier: ^5.1.1
+    version: 5.1.1
   postcss:
     specifier: ^8.4.27
     version: 8.4.27
@@ -473,6 +482,13 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
+  /@magidoc/plugin-svelte-marked@4.0.0:
+    resolution: {integrity: sha512-VvUxqUU8CQGRWeI9Y2R1wjxcv/hP0af/aYLX/dbbwr5JUZrRFAiT9d2HD4QHdazOcOusxiaN0Jt9torS9ffzwA==}
+    dependencies:
+      marked: 5.1.1
+      svelte: 3.59.2
+    dev: true
+
   /@melt-ui/pp@0.0.4(@melt-ui/svelte@0.22.2)(svelte@4.1.1):
     resolution: {integrity: sha512-slhmpE9C5+Fs/YjEJeyvzanK86QtLBR0abifiEK5Ihm3ncDFQyNcKW5FG7r1e35EA9e9oSTlMP95GNB72yal2w==}
     peerDependencies:
@@ -638,6 +654,10 @@ packages:
   /@types/marked@4.3.1:
     resolution: {integrity: sha512-vSSbKZFbNktrQ15v7o1EaH78EbWV+sPQbPjHG+Cp8CaNcPFUEfjZ0Iml/V0bFDwsTlYe8o6XC5Hfdp91cqPV2g==}
     dev: false
+
+  /@types/marked@5.0.1:
+    resolution: {integrity: sha512-Y3pAUzHKh605fN6fvASsz5FDSWbZcs/65Q6xYRmnIP9ZIYz27T4IOmXfH9gWJV1dpi7f1e7z7nBGUTx/a0ptpA==}
+    dev: true
 
   /@types/node-fetch@2.6.4:
     resolution: {integrity: sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg==}
@@ -2197,6 +2217,12 @@ packages:
     hasBin: true
     dev: false
 
+  /marked@5.1.1:
+    resolution: {integrity: sha512-bTmmGdEINWmOMDjnPWDxGPQ4qkDLeYorpYbEtFOXzOruTwUE671q4Guiuchn4N8h/v6NGd7916kXsm3Iz4iUSg==}
+    engines: {node: '>= 18'}
+    hasBin: true
+    dev: true
+
   /md5@2.3.0:
     resolution: {integrity: sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==}
     dependencies:
@@ -3010,6 +3036,11 @@ packages:
     dependencies:
       svelte: 4.1.1
       tslib: 2.6.0
+    dev: true
+
+  /svelte@3.59.2:
+    resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}
+    engines: {node: '>= 8'}
     dev: true
 
   /svelte@4.1.1:

@@ -8,11 +8,13 @@
   import type { DataFilter, ResponseSource } from "$lib/types";
   import { useChat } from "ai/svelte";
   import { onMount } from "svelte";
+  import type { RatePayload } from "../api/rate/+server.js";
 
   export let data;
   $: ({ initialMessages, initialProductFilter, initialVersionFilter } = data);
 
   let responseSources = [] as ResponseSource[];
+  let cacheHit = false;
 
   let dataFilter = {} as DataFilter;
 
@@ -28,6 +30,10 @@
         if (response.headers.has("X-Response-Data")) {
           const responseData = response.headers.get("X-Response-Data");
           if (responseData) responseSources = JSON.parse(responseData);
+        }
+        if (response.headers.has("X-Cache-Hit")) {
+          const cacheHitHeader = response.headers.get("X-Cache-Hit");
+          if (cacheHitHeader) cacheHit = JSON.parse(cacheHitHeader);
         }
       }
     },
@@ -117,13 +123,42 @@
     responseSources = [];
     chatInput.focus();
   }
+
+  async function handleRate(type: "up" | "down") {
+    const payload = {
+      type,
+      answer: $messages[1].content,
+      question: $messages[0].content,
+      product: dataFilter.product,
+      version: dataFilter.version,
+    } as RatePayload;
+    await fetch("api/rate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    // generate a new response
+    if (type === "down")
+      await reload({
+        options: {
+          body: {
+            filter: dataFilter,
+          },
+        },
+      });
+  }
 </script>
 
 <div class="pb-4 pt-4 md:pt-10 flex-1">
   <div class="relative mx-auto max-w-2xl px-4">
     {#if $messages.length}
       {#each $messages as message}
-        <Message {message} />
+        {@const voteStatus =
+          $messages.indexOf(message) === 1 ? "none" : "hidden"}
+        <Message {message} {voteStatus} {handleRate} />
       {/each}
     {:else}
       <EmptyState />

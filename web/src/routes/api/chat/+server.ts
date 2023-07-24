@@ -1,34 +1,15 @@
-import { building } from "$app/environment";
-import {
-  OPENAI_API_KEY,
-  UPSTASH_REDIS_REST_TOKEN,
-  UPSTASH_REDIS_REST_URL,
-} from "$env/static/private";
+import { OPENAI_API_KEY } from "$env/static/private";
+import { ratelimit, redis } from "$lib/db.server";
 import type { DataFilter } from "$lib/types.js";
 import { qdrantClient } from "$lib/vectorstore.server.js";
-import { Ratelimit } from "@upstash/ratelimit";
-import { Redis } from "@upstash/redis";
+import type { RequestHandler } from "@sveltejs/kit";
+
 import { OpenAIStream, StreamingTextResponse, type Message } from "ai";
 import {
   Configuration,
   OpenAIApi,
   type ChatCompletionRequestMessage,
 } from "openai-edge";
-
-let redis: Redis;
-let ratelimit: Ratelimit;
-
-if (!building) {
-  redis = new Redis({
-    url: UPSTASH_REDIS_REST_URL,
-    token: UPSTASH_REDIS_REST_TOKEN,
-  });
-
-  ratelimit = new Ratelimit({
-    redis,
-    limiter: Ratelimit.slidingWindow(2, "10 s"),
-  });
-}
 
 // Create an OpenAI API client (that's edge friendly!)
 const oaiConfig = new Configuration({
@@ -40,8 +21,7 @@ const openai = new OpenAIApi(oaiConfig);
 export const config = {
   runtime: "edge",
 };
-
-export async function POST({ request, getClientAddress }) {
+export const POST: RequestHandler = async ({ request, getClientAddress }) => {
   // check for rate limit
   const ip = getClientAddress();
   const rateLimitAttempt = await ratelimit.limit(ip);
@@ -63,7 +43,7 @@ export async function POST({ request, getClientAddress }) {
 
   const { messages, filter } = (await request.json()) as {
     messages: Message[];
-    filter: DataFilter;
+    filter?: DataFilter;
   };
 
   // join all user messages together
@@ -72,10 +52,20 @@ export async function POST({ request, getClientAddress }) {
     .map((message) => message.content);
 
   // check if the hash is in the KV store
-  // const cachedResponse = await redis.get(user_messages_hash) as any
-  // if (cachedResponse) {
-  //   return new Response(cachedResponse)
-  // }
+  // only cache first response
+  if (user_messages.length === 1) {
+    const key = [filter?.product, filter?.version, user_messages[0]].join(
+      ":::"
+    );
+    const cachedResponse = (await redis.get(key)) as string;
+    if (cachedResponse) {
+      return new Response(cachedResponse, {
+        headers: {
+          "x-cache-hit": "true",
+        },
+      });
+    }
+  }
 
   // if this there are multiple messages from the user, try and find a "contextual" query using the
   // response from the previous query
@@ -140,7 +130,7 @@ export async function POST({ request, getClientAddress }) {
 
   console.log(filter);
 
-  if (filter.version && filter.version !== "All Versions") {
+  if (filter?.version && filter.version !== "All Versions") {
     docsFilter["must"].push({
       should: [
         {
@@ -172,7 +162,7 @@ export async function POST({ request, getClientAddress }) {
       ],
     });
   }
-  if (filter.product && filter.product !== "All Products") {
+  if (filter?.product && filter.product !== "All Products") {
     docsFilter["must"].push({
       should: [
         {
@@ -191,7 +181,7 @@ export async function POST({ request, getClientAddress }) {
     });
   }
   if (
-    (!filter.product && !filter.version) ||
+    (!filter?.product && !filter?.version) ||
     (filter.product === "All Products" && filter.version === "All Versions")
   ) {
     docsFilter["must_not"].push({
@@ -335,7 +325,20 @@ export async function POST({ request, getClientAddress }) {
     });
 
     // Transform the response into a readable stream
-    const stream = OpenAIStream(response, {});
+    const stream = OpenAIStream(response, {
+      async onCompletion(completion) {
+        if (user_messages.length === 1)
+          // Cache the response
+          await redis.set(
+            [filter?.product, filter?.version, user_messages[0]].join(":::"),
+            completion,
+            {
+              // expire after 1 hour
+              ex: 60 * 60,
+            }
+          );
+      },
+    });
 
     // Return a StreamingTextResponse, which can be consumed by the client
     return new StreamingTextResponse(stream, {
@@ -364,4 +367,4 @@ export async function POST({ request, getClientAddress }) {
     // Return a StreamingTextResponse, which can be consumed by the client
     return new StreamingTextResponse(stream, {});
   }
-}
+};

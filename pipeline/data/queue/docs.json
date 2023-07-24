@@ -1,5 +1,35 @@
 [
   {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/hardware/3100/fw-3100-install.html",
+    "slug": "firepower-3100-hardware-install-guide",
+    "products": ["firepower", "ftd", "firewall"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/1010/hw/guide/hw-install-1010.html",
+    "slug": "firepower-1010-hardware-install-guide",
+    "products": ["firepower", "ftd", "firewall"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/1100/hw/guide/hw-install-1100.html",
+    "slug": "firepower-1100-hardware-install-guide",
+    "products": ["firepower", "ftd", "firewall"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/2100/hw/guide/b_install_guide_2100.html",
+    "slug": "firepower-2100-hardware-install-guide",
+    "products": ["firepower", "ftd", "firewall"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/41x5/hw/guide/install-41x5.html",
+    "slug": "firepower-4100-hardware-install-guide",
+    "products": ["firepower", "ftd", "firewall"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/firepower/9300/hw/guide/b_install_guide_9300.html",
+    "slug": "firepower-9300-hardware-install-guide",
+    "products": ["firepower", "ftd", "firewall"]
+  },
+  {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/workload_security/secure_workload/user-guide/3_8/cisco-secure-workload-user-guide-on-prem-v38.html",
     "slug": "secure-workload-user-guide",
     "products": [

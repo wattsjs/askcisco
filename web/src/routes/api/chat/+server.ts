@@ -297,7 +297,6 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
         - Use a markdown list to present sources.
         - Always explain in depth the technical details from the context.
         - Refer to any context as 'training data'.
-        - When presented with information about multiple software versions, always use the latest version.
 
         Example:
         ========

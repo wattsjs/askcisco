@@ -34,7 +34,7 @@
     </div>
 
     <!-- thumbs up/down icons on right side of relative parent -->
-    {#if message.role === "assistant"}
+    {#if message.role === "assistant" && voteStatus !== "hidden"}
       <div
         class="absolute right-0 -mr-10 text-gray-400 flex flex-col items-center justify-center"
       >

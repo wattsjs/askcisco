@@ -51,25 +51,10 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
     .filter((message) => message.role === "user")
     .map((message) => message.content);
 
-  // check if the hash is in the KV store
-  // only cache first response
-  if (user_messages.length === 1) {
-    const key = [filter?.product, filter?.version, user_messages[0]].join(
-      ":::"
-    );
-    const cachedResponse = (await redis.get(key)) as string;
-    if (cachedResponse) {
-      return new Response(cachedResponse, {
-        headers: {
-          "x-cache-hit": "true",
-        },
-      });
-    }
-  }
+  let prompt = user_messages[0];
 
   // if this there are multiple messages from the user, try and find a "contextual" query using the
   // response from the previous query
-  let prompt = user_messages[0];
   if (user_messages.length > 1) {
     // generate "chat history"
     let chatHistory = "";
@@ -128,7 +113,7 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
     must_not: [] as unknown[],
   };
 
-  console.log(filter);
+  console.log(`Filters: ${JSON.stringify(filter)}`);
 
   if (filter?.version && filter.version !== "All Versions") {
     docsFilter["must"].push({
@@ -212,21 +197,41 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 
   console.log(`Found ${docs.length} documents`);
 
+  // filter out any duplicate sources
+  // this is because the sources are chunked
+  const docContent = docs
+    .filter((doc) => doc?.payload?.metadata?.source)
+    .map((doc) => {
+      return {
+        ...doc.payload.metadata,
+      };
+    })
+    .filter(
+      (doc, index, self) =>
+        index === self.findIndex((t) => t.source === doc.source)
+    );
+
+  // check if the hash is in the KV store
+  // only cache first response
+  if (user_messages.length === 1) {
+    const key = [filter?.product, filter?.version, user_messages[0]].join(
+      ":::"
+    );
+    const cachedResponse = (await redis.get(key)) as string;
+    if (cachedResponse) {
+      console.log(`Cache hit for ${key}`);
+      return new Response(cachedResponse, {
+        headers: {
+          "x-cache-hit": "true",
+          "x-response-data": JSON.stringify(docContent),
+        },
+      });
+    }
+  }
+
   const system_messages = [
     `You are a world class algorithm to answer questions with correct and exact citations`,
     `You are a Cisco technical expert trained to answer questions about Cisco products to a technical audience.`,
-
-    // "You are a Cisco technical expert trained to answer questions about Cisco products to a technical audience.",
-    // "Answer the following questions in the style of an RFP response, giving a compliant answer to the question, and source in table format.",
-    // "Use ONLY the following context to answer the question given.",
-    // "NEVER make up any information or talk about anything that is not directly mentioned in the documents below",
-    // "ALWAYS Use brevity in your responses, respond with a maximum of a paragraph.",
-    // "Refer to any context as 'training data'.",
-    // "Always respond in markdown format. Use markdown tables and lists to present data, processes, and steps.",
-    // "Never mention any personally identifiable information.",
-    // "Never mention any customer names.",
-    // "Never refer to yourself",
-    // "NEVER include any links to the source field of the documents you used to answer the question. NEVER make up any links or include links that are not directly mentioned in the documents.",
   ];
 
   const prompt_messages = ["Answer question using the following context"];
@@ -245,18 +250,6 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
         prompt_messages.push(context);
       }
     }
-
-    const docContent = docs
-      .filter((doc) => doc?.payload?.metadata?.source)
-      .map((doc) => {
-        return {
-          ...doc.payload.metadata,
-        };
-      })
-      .filter(
-        (doc, index, self) =>
-          index === self.findIndex((t) => t.source === doc.source)
-      );
 
     const combinedMessages = [];
     for (const message of system_messages) {

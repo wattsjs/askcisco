@@ -58,8 +58,13 @@ def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False
     datas = get_queued_data(type)
 
     for data in datas:
-        if not force:
-            results, points = client.scroll(
+        # check if "force" or "update" is a key in the data
+        document_force = False
+        if data.get("force") or data.get("update"):
+            document_force = True
+
+        if not force and not document_force:
+            results, _ = client.scroll(
                 collection_name,
                 scroll_filter=Filter(
                     must=[
@@ -93,6 +98,14 @@ def ingest(client: QdrantClient, embed: OpenAIEmbeddings, type: str, force=False
             )
             logging.info(f"🗑 deleted {delete_result}")
             logging.info(f"‼️ force adding {data['source']}")
+
+            # if the document was forced, remove the force key
+            if "force" in data:
+                del data["force"]
+            if "update" in data:
+                del data["update"]
+
+            update_queued_data(type, datas)
 
         if type == "urls":
             docs = get_documents_from_queued_urls([data])
@@ -320,6 +333,18 @@ def get_queued_data(type: str):
             data = [u for u in data if "source" in u]
 
     return data
+
+
+def update_queued_data(type: str, data: list[dict]):
+    # override the existing file with the new data
+    try:
+        with open(f"data/queue/{type}.json", "w") as f:
+            f.write(json.dumps(data))
+    except FileNotFoundError:
+        with open(f"pipeline/data/queue/{type}.json", "w") as f:
+            f.write(json.dumps(data))
+
+    logging.info(f"✅ updated {type}.json")
 
 
 if __name__ == "__main__":

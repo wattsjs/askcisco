@@ -1,5 +1,55 @@
 [
   {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/multicloud-defense/user-guide/cisco-multicloud-defense-user-guide/about-multicloud-defense.html",
+    "slug": "cisco-multicloud-defense-user-guide",
+    "products": ["cisco multicloud defense", "cdo", "multicloud defense"],
+    "title": "Cisco Multicloud Defense User Guide",
+    "subtitle": "Chapter: About Multicloud Defense"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/cloud-delivered-firewall-management-center-in-cdo/managing-firewall-threat-defense-services-with-cisco-defense-orchestrator/m-about-cloud-delivered-firewall-management-center.html",
+    "slug": "managing-firewall-threat-defense-services-with-cisco-defense-orchestrator",
+    "products": ["cisco multicloud defense", "cdo", "multicloud defense"],
+    "title": "Managing Firewall Threat Defense with Cloud-delivered Firewall Management Center in Cisco Defense Orchestrator",
+    "subtitle": "Chapter: Managing Cisco Secure Firewall Threat Defense Devices with Cloud-delivered Firewall Management Center"
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/managing-ios-with-cdo/manage-ios-with-cisco-defense-orchestrator.html",
+    "slug": "managing-ios-with-cisco-defense-orchestrator",
+    "products": ["cisco multicloud defense", "cdo", "multicloud defense", "ios"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/managing-meraki-with-cdo/managing-meraki-with-cisco-defense-orchestrator.html",
+    "slug": "managing-meraki-with-cisco-defense-orchestrator",
+    "products": [
+      "cisco multicloud defense",
+      "cdo",
+      "multicloud defense",
+      "meraki"
+    ]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/managing-aws-with-cdo/manage-aws-with-cisco-defense-orchestrator.html",
+    "slug": "managing-aws-with-cisco-defense-orchestrator",
+    "products": ["cisco multicloud defense", "cdo", "multicloud defense", "aws"]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/managing-cisco-secure-firewall-cloud-native-with-cdo/managing-cisco-secure-firewall-cloud-native-with-cisco-defense-orchestrator.html",
+    "slug": "managing-cisco-secure-firewall-cloud-native-with-cisco-defense-orchestrator",
+    "products": [
+      "cisco multicloud defense",
+      "cdo",
+      "multicloud defense",
+      "cisco secure firewall cloud native",
+      "sfcn"
+    ]
+  },
+  {
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/managing-asa-with-cdo/managing-asa-with-cisco-defense-orchestrator.html",
+    "slug": "managing-asa-with-cisco-defense-orchestrator",
+    "products": ["cisco multicloud defense", "cdo", "multicloud defense", "asa"]
+  },
+  {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/hardware/3100/fw-3100-install.html",
     "slug": "firepower-3100-hardware-install-guide",
     "products": ["firepower", "ftd", "firewall"]
@@ -100,11 +150,7 @@
     "products": ["umbrella", "sig"],
     "slug": "umbrella"
   },
-  {
-    "source": "https://duo.com/docs",
-    "products": ["duo"],
-    "slug": "duo"
-  },
+  { "source": "https://duo.com/docs", "products": ["duo"], "slug": "duo" },
   {
     "slug": "esa-admin-guide",
     "source": "https://www.cisco.com/c/en/us/td/docs/security/esa/esa14-2/user_guide/b_ESA_Admin_Guide_14-2.html",

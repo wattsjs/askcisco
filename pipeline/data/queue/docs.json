@@ -1,5 +1,19 @@
 [
   {
+    "source": "https://docs.panoptica.app/docs",
+    "slug": "panoptica",
+    "products": ["panoptica"],
+    "title": "Panoptica Documentation",
+    "version": "1.0"
+  },
+  {
+    "source": "https://docs.panoptica.app/v2.0/docs",
+    "slug": "panoptica",
+    "products": ["panoptica"],
+    "title": "Panoptica Documentation",
+    "version": "2.0"
+  },
+  {
     "source": "https://www.cisco.com/c/en/us/td/docs/security/cdo/multicloud-defense/user-guide/cisco-multicloud-defense-user-guide/about-multicloud-defense.html",
     "slug": "cisco-multicloud-defense-user-guide",
     "products": ["cisco multicloud defense", "cdo", "multicloud defense"],
@@ -175,6 +189,12 @@
     "source": "https://www.cisco.com/c/en/us/td/docs/security/ise/3-2/admin_guide/b_ise_admin_3_2.html",
     "product": "ise",
     "version": "3.2"
+  },
+  {
+    "slug": "ise-admin-guide",
+    "source": "https://www.cisco.com/c/en/us/td/docs/security/ise/3-3/admin_guide/b_ise_admin_3_3.html",
+    "product": "ise",
+    "version": "3.3"
   },
   {
     "slug": "ise-admin-guide",

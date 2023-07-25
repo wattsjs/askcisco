@@ -62,7 +62,8 @@ class PanopticaSpider(scrapy.Spider):
         print(f"Parsed {title} ({response.url})")
 
         d = {
-            "title": title,
+            "title": "Panoptica Documentation",
+            "subtitle": title,
             "content": text,
             "url": response.url,
         }
@@ -77,12 +78,12 @@ if __name__ == "__main__":
 
     docs = [
         {
-            "url": "https://docs.panoptica.app/v2.0/docs",
-            "versions": ["2.0"],
-        },
-        {
             "url": "https://docs.panoptica.app/docs",
             "versions": ["1.0"],
+        },
+        {
+            "url": "https://docs.panoptica.app/v2.0/docs",
+            "versions": ["2.0"],
         },
     ]
 
